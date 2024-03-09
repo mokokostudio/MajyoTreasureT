@@ -1,0 +1,179 @@
+{
+    "win": true,
+    "old_rank": 175,
+    "new_rank": 136,
+    "challenger_hp": 17530,
+    "defender_hp": 21266,
+    "details": [
+        {
+            "be_attacker": 3,
+            "hp_before": 21266,
+            "hp_after": 17574,
+            "dmg": 3692,
+            "attack_time": 6000
+        },
+        {
+            "attacker_type": 3,
+            "hp_before": 17530,
+            "hp_after": 17530,
+            "is_miss": true,
+            "attack_time": 6000
+        },
+        {
+            "be_attacker": 3,
+            "hp_before": 17574,
+            "hp_after": 15693,
+            "dmg": 1881,
+            "is_cri": true,
+            "attack_time": 12000
+        },
+        {
+            "attacker_type": 3,
+            "hp_before": 17530,
+            "hp_after": 15467,
+            "dmg": 2063,
+            "attack_time": 12000
+        },
+        {
+            "be_attacker": 3,
+            "hp_before": 15693,
+            "hp_after": 14137,
+            "dmg": 1556,
+            "attack_time": 18000
+        },
+        {
+            "attacker_type": 3,
+            "hp_before": 15467,
+            "hp_after": 13213,
+            "dmg": 2254,
+            "is_cri": true,
+            "attack_time": 18000
+        },
+        {
+            "be_attacker": 3,
+            "hp_before": 14137,
+            "hp_after": 12308,
+            "dmg": 1829,
+            "is_cri": true,
+            "attack_time": 24000
+        },
+        {
+            "attacker_type": 3,
+            "hp_before": 13213,
+            "hp_after": 13213,
+            "is_miss": true,
+            "attack_time": 24000
+        },
+        {
+            "be_attacker": 3,
+            "hp_before": 12308,
+            "hp_after": 10633,
+            "dmg": 1675,
+            "attack_time": 30000
+        },
+        {
+            "attacker_type": 3,
+            "hp_before": 13213,
+            "hp_after": 10938,
+            "dmg": 2275,
+            "is_cri": true,
+            "attack_time": 30000
+        },
+        {
+            "be_attacker": 3,
+            "hp_before": 10633,
+            "hp_after": 9026,
+            "dmg": 1607,
+            "is_cri": true,
+            "attack_time": 36000
+        },
+        {
+            "attacker_type": 3,
+            "hp_before": 10938,
+            "hp_after": 8811,
+            "dmg": 2127,
+            "attack_time": 36000
+        },
+        {
+            "be_attacker": 3,
+            "hp_before": 9026,
+            "hp_after": 7385,
+            "dmg": 1641,
+            "is_cri": true,
+            "attack_time": 42000
+        },
+        {
+            "attacker_type": 3,
+            "hp_before": 8811,
+            "hp_after": 6876,
+            "dmg": 1935,
+            "attack_time": 42000
+        },
+        {
+            "be_attacker": 3,
+            "hp_before": 7385,
+            "hp_after": 5693,
+            "dmg": 1692,
+            "attack_time": 48000
+        },
+        {
+            "attacker_type": 3,
+            "hp_before": 6876,
+            "hp_after": 6876,
+            "is_miss": true,
+            "attack_time": 48000
+        },
+        {
+            "be_attacker": 3,
+            "hp_before": 5693,
+            "hp_after": 1967,
+            "dmg": 3726,
+            "attack_time": 54000
+        },
+        {
+            "attacker_type": 3,
+            "hp_before": 6876,
+            "hp_after": 4558,
+            "dmg": 2318,
+            "is_cri": true,
+            "attack_time": 54000
+        },
+        {
+            "be_attacker": 3,
+            "hp_before": 1967,
+            "hp_after": 1967,
+            "is_miss": true,
+            "attack_time": 60000
+        },
+        {
+            "attacker_type": 3,
+            "hp_before": 4558,
+            "hp_after": 2240,
+            "dmg": 2318,
+            "attack_time": 60000
+        },
+        {
+            "be_attacker": 3,
+            "hp_before": 1967,
+            "hp_after": 86,
+            "dmg": 1881,
+            "attack_time": 66000
+        },
+        {
+            "attacker_type": 3,
+            "hp_before": 2240,
+            "hp_after": 71,
+            "dmg": 2169,
+            "attack_time": 66000
+        },
+        {
+            "be_attacker": 3,
+            "hp_before": 86,
+            "dmg": 86,
+            "is_cri": true,
+            "attack_time": 72000
+        }
+    ],
+    "pvp_challenge_cnt": 1,
+    "pvp_challenge_cnt_update_at": 1706697047
+}

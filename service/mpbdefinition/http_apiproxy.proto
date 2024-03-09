@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package mpb;
+
+option go_package = "./mpb";
+
+message CReqGenerateShareHBossLink {
+    uint64 boss_uuid = 1;
+}
+
+message CResGenerateShareHBossLink {
+    string share_link = 1;
+}

@@ -1,0 +1,75 @@
+{
+    "version": 1,
+    "weapon": [
+        {
+            "type": 1,
+            "name": "Garm",
+            "id": 1001,
+            "level": 1,
+            "main_atr_1": "ATK",
+            "main_atr_1_val": 500,
+            "main_atr_2": "HP",
+            "main_atr_2_val": 500,
+            "add_atr_1": "none",
+            "add_atr_1_val": 0,
+            "add_atr_2": "none",
+            "add_atr_2_val": 0
+        },
+        {
+            "type": 2,
+            "name": "Edda",
+            "id": 1002,
+            "level": 1,
+            "main_atr_1": "ATK",
+            "main_atr_1_val": 500,
+            "main_atr_2": "HIT",
+            "main_atr_2_val": 500,
+            "add_atr_1": "none",
+            "add_atr_1_val": 0,
+            "add_atr_2": "none",
+            "add_atr_2_val": 0
+        },
+        {
+            "type": 3,
+            "name": "Norns",
+            "id": 1003,
+            "level": 1,
+            "main_atr_1": "CRT",
+            "main_atr_1_val": 500,
+            "main_atr_2": "SPD",
+            "main_atr_2_val": 500,
+            "add_atr_1": "none",
+            "add_atr_1_val": 0,
+            "add_atr_2": "none",
+            "add_atr_2_val": 0
+        },
+        {
+            "type": 4,
+            "name": "Parvati",
+            "id": 1004,
+            "level": 1,
+            "main_atr_1": "CRT",
+            "main_atr_1_val": 500,
+            "main_atr_2": "HP",
+            "main_atr_2_val": 500,
+            "add_atr_1": "none",
+            "add_atr_1_val": 0,
+            "add_atr_2": "none",
+            "add_atr_2_val": 0
+        },
+        {
+            "type": 5,
+            "name": "Tartarus",
+            "id": 1005,
+            "level": 1,
+            "main_atr_1": "HIT",
+            "main_atr_1_val": 500,
+            "main_atr_2": "SPD",
+            "main_atr_2_val": 500,
+            "add_atr_1": "none",
+            "add_atr_1_val": 0,
+            "add_atr_2": "none",
+            "add_atr_2_val": 0
+        }
+    ]
+}

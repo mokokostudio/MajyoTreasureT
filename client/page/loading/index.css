@@ -1,0 +1,255 @@
+@font-face{
+    font-family: myFirstFont;
+    src: url(../../assets/ShanghaiFace-SenGBT-Flash.ttf)
+  }
+
+body{
+  background:#47326b;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@keyframes txtfade {
+  0% { opacity: 0;}
+  100% { opacity: 1;}
+}
+@-webkit-keyframes txtfade {
+  0% { opacity: 0;}
+  100% { opacity: 1;}
+}
+@-moz-keyframes txtfade {
+  0% { opacity: 0;}
+  100% { opacity: 1;}
+}
+@-o-keyframes txtfade {
+  0% { opacity: 0;}
+  100% { opacity: 1;}
+}
+
+@keyframes zoom{
+  0%{transform: scale(1);}
+  50%{transform: scale(1.01);}
+  100%{transform: scale(1);}
+}
+@-webkit-keyframes zoom{
+  0%{transform: scale(1);}
+  50%{transform: scale(1.01);}
+  100%{transform: scale(1);}
+}
+@-moz-keyframes zoom{
+  0%{transform: scale(1);}
+  50%{transform: scale(1.01);}
+  100%{transform: scale(1);}
+}
+@-o-keyframes zoom{
+  0%{transform: scale(1);}
+  50%{transform: scale(1.01);}
+  100%{transform: scale(1);}
+}
+
+@keyframes dot {
+  0% { content: '.'}
+  25% { content: '..'}
+  50% { content: '...'}
+  75% { content: ''}
+  100% { content: '.'}
+}
+
+@-webkit-keyframes dot {
+  0% { content: '.'}
+  25% { content: '..'}
+  50% { content: '...'}
+  75% { content: ''}
+  100% { content: '.'}
+}
+
+@-moz-keyframes dot {
+  0% { content: '.'}
+  25% { content: '..'}
+  50% { content: '...'}
+  75% { content: ''}
+  100% { content: '.'}
+}
+
+@-o-keyframes dot {
+  0% { content: '.'}
+  25% { content: '..'}
+  50% { content: '...'}
+  75% { content: ''}
+  100% { content: '.'}
+}
+
+.loading-view{
+  background:#47326b url(../../assets/bg.png) no-repeat center top;
+  background-size: 100%;
+  width:750px;
+  height: 1450px;
+  margin:0 auto 0;
+  font-family: myFirstFont;
+}
+
+.tips-div{
+  z-index: 9999;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: inherit;
+}
+
+/* .loading{ height: 100%;} */
+
+.text-stroke{
+  -webkit-text-stroke:4px transparent;
+  background:#5C2102;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  -o-background-clip: text;
+  background-clip: text;
+  padding: 0 1px;
+}
+.bak{
+  width: inherit;
+  height: inherit;
+  background-color: #000;
+  opacity: 0.3;
+  position: absolute;
+}
+
+.bgtxt{
+  display: inline-block;
+  position: absolute;
+  width: 750px;
+  height: 980px;
+  padding: 80px;
+  color: #FFD346;
+  font-size: 30px;
+  white-space: pre-line;
+  line-height: 40px;
+  div{
+    margin-top: 25px;
+
+    span{
+      animation: txtfade 0.6s ease 1;
+      -webkit-animation: txtfade 0.6s ease 1;
+      -moz-animation: txtfade 0.6s ease 1;
+      -o-animation: txtfade 0.6s ease 1;
+      display: inline-block;
+      margin-right: 10px;
+    }
+  }
+}
+
+
+.loading-div{
+  width: inherit;
+  height: 300px;
+  position: absolute;
+  top: 1080px;
+  color: #fff4d0;
+  font-size: 34px;
+
+  .loading-uni{
+    text-align: center;
+    margin-bottom: 20px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    div{
+      float: left;
+    }
+    .loading-text {
+      span {
+        display: inline-block;
+        float: left;
+        margin-left: 5px;
+        position: absolute;
+        line-height: 10px;
+      }
+      .dot::after {
+        content: '';
+        animation: dot 2s infinite;
+        -webkit-animation: dot 2s infinite;
+        -moz-animation: dot 2s infinite;
+        -o-animation: dot 2s infinite;
+      }
+    }
+  }
+
+  .loading{
+    margin:40px 0 0 0;
+
+    .progress {
+      width: 500px;
+      background: url(../../assets/boss/progress.png) no-repeat left center;
+      background-size: 100%;
+      margin: 0 auto;
+      position: relative;
+      overflow: hidden;
+      height: 34px;
+
+      .val {
+          font-size: 22px;
+          line-height: 34px;
+          height: 34px;
+          position: absolute;
+          width: 100%;
+          left: 0;
+          top: 0;
+          text-align: center;
+      }
+
+      .doing{
+        width: 0%;
+        height: 30px;
+        margin-top: 2px;
+        border-radius: 100px;
+        background: #5aec52;
+        -webkit-transition: all .15s;
+        -moz-transition: all .15s;
+        -o-transition: all .15s;
+        transition: all .15s;
+      }
+    }
+  }
+}
+
+.gamestart{
+  position: absolute;
+  top:1100px;
+  left:0;
+  text-align: center;
+  width: 100%;
+  span{
+    display:inline-block;
+    width:200px;
+    height: 80px;
+    background: url(../../assets/boss/start.png) no-repeat left center;
+    background-size: 100%;
+    animation: zoom .8s ease infinite;
+    -webkit-animation: zoom .8s ease infinite;
+    -moz-animation: zoom .8s ease infinite;
+    -o-animation: zoom .8s ease infinite;
+  }
+}
+.starttxt{
+  position: relative;
+  top:1050px;
+  color: #fff4d0;
+  span{
+    font-size: 25px;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+}

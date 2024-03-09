@@ -1,0 +1,12 @@
+Cmd,switch,Row,Text,Url,CallbackData,CallbackGame
+string,bool,int,string,string,string,bool
+命令,开关,行,按钮文本,Url,回调参数,回调游戏(与回调参数互斥)
+/menu,true,1,BUTTON_PLAY_GAME,,/cbqsendgame,false
+/menu,false,2,BUTTON_WALLET,https://google.com,,false
+/menu,false,2,BUTTON_NFT_MARKET,https://google.com,,false
+/menu,false,3,BUTTON_ASK_ENERGY,https://google.com,,false
+/menu,true,3,BUTTON_SETTING,,/cbqsendsetting,false
+/cbqsendgame,true,1,BUTTON_PLAY_GAME,,,true
+/cbqsendsetting,true,1,BUTTON_SET_LAN_EN,,/cbqsetlan?lan=en,false
+/cbqsendsetting,true,1,BUTTON_SET_LAN_ZH_HANS,,/cbqsetlan?lan=zh-hans,false
+/cbqsendsetting,true,2,BUTTON_SET_LAN_ZH_HANT,,/cbqsetlan?lan=zh-hant,false

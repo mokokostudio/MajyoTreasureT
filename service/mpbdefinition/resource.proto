@@ -1,0 +1,240 @@
+syntax = "proto3";
+
+package mpb;
+
+import "common.proto";
+
+option go_package = "./mpb";
+
+// apiproxy
+message EmailAddrRsc {
+    string addr = 1;
+    string passwd = 2;
+    string host = 3;
+    string port = 4;
+}
+
+message MoralisInfoRsc {
+    string api_key = 1;
+}
+
+message TGReplyRsc {
+    string cmd = 1;
+    string type = 2;
+    string sub_type = 3;
+    string method = 4;
+    string text = 5;
+    string photo = 6;
+    string game_short_name = 7;
+    string url = 8;
+}
+
+message TGInlineKeyboardRsc {
+    string cmd = 1;
+    bool switch = 2;
+    uint32 row = 3;
+    string text =4;
+    string url = 5;
+    string callback_data = 6;
+    bool callback_game = 7;
+}
+
+message TGGameRsc {
+    string game_name = 1;
+    string game_short_name = 2;
+    string game_url = 3;
+}
+
+message TGSpecialLinkRsc {
+    string cmd = 1;
+    string game_bot = 2;
+    string comment = 3;
+}
+
+message TGStringsRsc {
+    string key = 1;
+    string zh_hans = 2;
+     string zh_hant = 3;
+    string en = 4;
+}
+
+// nftservice
+message NFTCollectionRsc {
+    ENFT.NFTType nft_type = 1;
+    repeated string collection_hash = 2;
+}
+
+message NFTConfigRsc {
+    uint64 nft_graphiql_query_limit = 1;
+    uint64 nft_graphiql_page_num = 2;
+    string nft_transfer_event = 3;
+    string nft_burn_event = 4;
+    string nft_withdraw_event2 = 5;
+    string nft_deposit_event2 = 6;
+    string nft_burn_event2 = 7;
+    string nft_mint_event2 = 8;
+    string nft_transfer_offer_event2 = 9;
+    string nft_transfer_claim_event2 = 10;
+}
+
+message AdminRsc {
+    string account = 1;
+    string password = 2;
+}
+
+// game
+message PlayerInitAttrs {
+    Attrs attrs = 1;
+}
+
+message BossRsc {
+    uint32 boss_id = 1;
+    ERole.BossType boss_type = 2;
+    string name = 3;
+    string photo = 4;
+    uint32 class = 5;
+    uint32 level = 6;
+    int64 live_time = 7;
+    uint32 pre_boss = 8;
+    repeated uint32 nft_equips = 9;
+    uint32 nft_equips_level = 10;
+    uint32 energy_cost = 11;
+    Attrs attrs = 12;
+    uint64 win_dmg_rate = 13;
+    repeated AwardRsc first_win_awards = 14;
+    repeated AwardRsc awards = 15;
+    repeated AwardRsc finder_awards = 16;
+    repeated AwardRsc killer_awards = 17;
+    repeated AwardRsc dmg_awards = 18;
+    uint64 dmg_awards_coe1 = 19;
+    uint64 dmg_awards_coe2 = 20;
+    string level_show = 21;
+    uint64 mana_awards_boss_fight = 22;
+    uint64 mana_awards_pvp_pool = 23;
+    uint32 buff_card_rand_pool = 24;
+}
+
+message HiddenBossTriggerRsc {
+    uint32 boss_id = 1;
+    uint32 trigger_rate = 2;
+    uint32 hidden_boss_id = 3;
+}
+
+message GameConfigRsc {
+    uint32 energy_limit = 1;
+    int64 energy_recover_time = 2;
+    int64 fight_hidden_boss_cd = 3;
+}
+
+message PVPConfigRsc {
+    uint32 pvp_season_id = 1;
+    uint32 daily_pvp_free_challenge_cnt = 2;
+    uint32 pvp_mana_consume = 3;
+    repeated Uint32Range rank_ranges = 4;
+    Float64Range challenge_target1_coe = 5;
+    Float64Range challenge_target2_coe = 6;
+    Float64Range challenge_target3_coe = 7;
+    uint64 mana_awards_pool = 8;
+}
+
+message BuffCardRsc {
+    uint32 card_id = 1;
+    EGame.BuffCardType card_type = 2;
+    uint32 card_level = 3;
+    uint32 round = 4;
+    uint64 atc_add = 5;
+    uint64 defense_add = 6;
+    uint64 cri_dmg_add = 7;
+    uint64 cri_rate_add = 8;
+    uint64 dodge_rate_add = 9;
+    uint64 dodge_atk = 10;
+    uint64 buff_round_add = 11;
+    uint64 cri_awards_add = 12;
+    uint64 dodge_steal_atk = 13;
+    uint64 dodge_awards_add = 14;
+    uint32 trigger_cnt_per_round = 15;
+    uint32 buff_card_rand_pool = 16;
+    uint32 buff_level_add = 17;
+}
+
+message BuffCardRandPoolRsc {
+    uint32 pool_id = 1;
+    repeated RandomNode buff_cards = 2;
+}
+
+// item
+message AwardRsc {
+    uint32 item_id = 1;
+    uint64 num = 2;
+    repeated uint64 num_range = 3;
+}
+
+message ItemRsc {
+    uint32 item_id = 1;
+    EItem.Type item_type = 2;
+    string name_string_key = 3;
+    bool is_unique = 4;
+    uint32 origin_id = 5;
+    int64 expire_time = 6;
+}
+
+message BaseEquipRsc {
+    EItem.BaseEquipType equip_type = 1;
+    Attrs base_attrs = 2;
+}
+
+message BaseEquipLevelRsc {
+    EItem.BaseEquipType equip_type = 1;
+    uint32 level = 2;
+    Attrs attrs = 3;
+    repeated Item upgrade_consume_items = 4;
+    uint32 upgrade_success_rate = 5;
+    uint32 protect_success_num = 6;
+}
+
+message BaseEquipStarRsc {
+    EItem.BaseEquipType equip_type = 1;
+    uint32 star = 2;
+    Attrs attrs = 3;
+    repeated Item upgrade_consume_items = 4;
+    uint32 upgrade_success_rate = 5;
+    uint32 protect_success_num = 6;
+}
+
+message BotRsc {
+    uint64 id = 1;
+    string nickname = 2;
+    string icon = 3;
+    repeated BaseEquip base_equips = 4;
+}
+
+// timer
+message PVPScheduleRsc {
+    uint32 pvp_season_id = 1;
+    int64 start_time = 2;
+    int64 end_time = 3;
+    int64 settle_start_at = 4;
+    int64 settle_end_at = 5;
+}
+
+message PVPRankRewardsRsc {
+    uint32 pvp_season_id = 1;
+    repeated uint32 rank_range = 2;
+    repeated AwardRsc rewards = 3;
+    uint32 mana_rewards_pool_rate = 4;
+}
+
+// market
+message MarketConfigRsc {
+    uint32 on_sell_order_cnt = 1;
+    int64 open_sell_after = 2;
+    uint64 min_price = 3;
+    uint64 max_price = 4;
+    uint64 max_sell_cnt = 5;
+
+}
+
+message MarketGoodsRsc {
+    uint32 goods_id = 1;
+    uint64 gas_rate = 2;
+}

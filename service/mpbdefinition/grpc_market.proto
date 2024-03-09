@@ -1,0 +1,61 @@
+syntax = "proto3";
+
+package mpb;
+
+option go_package = "./mpb";
+
+import "common.proto";
+
+service MarketService {
+    rpc GetGoodsOrdersOnSell(ReqGetGoodsOrdersOnSell) returns (ResGetGoodsOrdersOnSell);
+    rpc GetMyGoodsOrdersOnSell(ReqUserId) returns (ResGetMyGoodsOrdersOnSell);
+    rpc PublishGoodsOrder(ReqPublishGoodsOrder) returns (Empty);
+    rpc PurchaseGoodsOrder(ReqPurchaseGoodsOrder) returns (ResPurchaseGoodsOrder);
+    rpc TakeOffGoodsOrder(ReqTakeOffGoodsOrder) returns (ResTakeOffGoodsOrder);
+
+    rpc AdminFreezeAccountTrade(ReqUserId) returns (Empty);
+}
+
+message ReqGetGoodsOrdersOnSell {
+    uint32 item_id = 1;
+    uint32 page_num = 2;
+}
+
+message ResGetGoodsOrdersOnSell {
+    uint32 item_id = 1;
+    uint32 page_num = 2;
+    repeated GoodsOrder orders = 3;
+    uint32 order_cnt = 4;
+}
+
+message ResGetMyGoodsOrdersOnSell {
+    repeated GoodsOrder orders = 1;
+}
+
+message ReqPublishGoodsOrder {
+    uint64 user_id = 1;
+    uint32 item_id = 2;
+    uint64 num = 3;
+    uint64 price = 4;
+}
+
+message ReqPurchaseGoodsOrder {
+    uint64 user_id = 1;
+    uint64 order_uuid = 2;
+}
+
+message ResPurchaseGoodsOrder {
+    Item goods = 1;
+    uint64 mana_cost = 2;
+    uint64 mana_left = 3;
+}
+
+message ReqTakeOffGoodsOrder {
+    uint64 user_id = 1;
+    uint64 order_uuid = 2;
+}
+
+message ResTakeOffGoodsOrder {
+    Item add_item = 1;
+    Item update_item = 2;
+}

@@ -1,0 +1,1072 @@
+@font-face{
+  font-family: myFirstFont;
+  src: url(../../assets/ShanghaiFace-SenGBT-Flash.ttf)
+}
+
+body{
+  background:#47326b;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+@keyframes upsuccess {
+  100% {background-image: url(../../assets/frameimg/upsuccess.gif);}
+}
+@-webkit-keyframes upsuccess {
+  100% {background-image: url(../../assets/frameimg/upsuccess.gif);}
+}
+@-moz-keyframes upsuccess{
+  100% { background-image: url(../../assets/frameimg/upsuccess.gif); } /* 第一帧图片路径 */
+}
+@-o-keyframes upsuccess{
+  100% { background-image: url(../../assets/frameimg/upsuccess.gif); } /* 第一帧图片路径 */
+}
+@keyframes slidein-next{
+  from { opacity: 0; transform: translateX(+200px); }
+  to { opacity: 1; transform: translateX(0px); }
+}
+@keyframes slideout-next{
+  from { opacity: 1; transform: translateX(0px); }
+  to { opacity: 0; transform: translateX(-140px); }
+}
+@keyframes slidein-prev{
+  from { opacity: 0; transform: translateX(-200px); }
+  to { opacity: 1; transform: translateX(0px); }
+}
+@keyframes slideout-prev{
+  from { opacity: 1; transform: translateX(0px); }
+  to { opacity: 0; transform: translateX(+140px); }
+}
+
+@-webkit-keyframes slidein-next{
+  from { opacity: 0; transform: translateX(+200px); }
+  to { opacity: 1; transform: translateX(0px); }
+}
+@-webkit-keyframes slideout-next{
+  from { opacity: 1; transform: translateX(0px); }
+  to { opacity: 0; transform: translateX(-140px); }
+}
+@-webkit-keyframes slidein-prev{
+  from { opacity: 0; transform: translateX(-200px); }
+  to { opacity: 1; transform: translateX(0px); }
+}
+@-webkit-keyframes slideout-prev{
+  from { opacity: 1; transform: translateX(0px); }
+  to { opacity: 0; transform: translateX(+140px); }
+}
+
+@-moz-keyframes slidein-next{
+  from { opacity: 0; transform: translateX(+200px); }
+  to { opacity: 1; transform: translateX(0px); }
+}
+@-moz-keyframes slideout-next{
+  from { opacity: 1; transform: translateX(0px); }
+  to { opacity: 0; transform: translateX(-140px); }
+}
+@-moz-keyframes slidein-prev{
+  from { opacity: 0; transform: translateX(-200px); }
+  to { opacity: 1; transform: translateX(0px); }
+}
+@-moz-keyframes slideout-prev{
+  from { opacity: 1; transform: translateX(0px); }
+  to { opacity: 0; transform: translateX(+140px); }
+}
+
+@-o-keyframes slidein-next{
+  from { opacity: 0; transform: translateX(+200px); }
+  to { opacity: 1; transform: translateX(0px); }
+}
+@-o-keyframes slideout-next{
+  from { opacity: 1; transform: translateX(0px); }
+  to { opacity: 0; transform: translateX(-140px); }
+}
+@-o-keyframes slidein-prev{
+  from { opacity: 0; transform: translateX(-200px); }
+  to { opacity: 1; transform: translateX(0px); }
+}
+@-o-keyframes slideout-prev{
+  from { opacity: 1; transform: translateX(0px); }
+  to { opacity: 0; transform: translateX(+140px); }
+}
+
+@keyframes heart{
+  from{transform:translate(0,0)}
+  to{transform:translate(0,10px)}
+}
+@keyframes zoom{
+  0%{transform: scale(1);}
+  50%{transform: scale(1.01);}
+  100%{transform: scale(1);}
+}
+@keyframes uptxt{
+  0%{transform: scale(1);}
+  50%{transform: scale(1.3);}
+  100%{transform: scale(1);}
+}
+@keyframes expand {
+    0% { transform: scale(0); }
+    100% { transform: scale(1); }
+}
+/* 定义弹窗退出动画 */
+@keyframes popupLeaveAnimation {
+    0% { opacity: 1; scaleY: 1; }
+    100% { opacity: 0; scaleY: 0; }
+}
+
+@-webkit-keyframes heart{
+  from{transform:translate(0,0)}
+  to{transform:translate(0,10px)}
+}
+@-webkit-keyframes zoom{
+  0%{transform: scale(1);}
+  50%{transform: scale(1.01);}
+  100%{transform: scale(1);}
+}
+@-webkit-keyframes uptxt{
+  0%{transform: scale(1);}
+  50%{transform: scale(1.3);}
+  100%{transform: scale(1);}
+}
+@-webkit-keyframes expand {
+    0% { transform: scale(0); }
+    100% { transform: scale(1); }
+}
+/* 定义弹窗退出动画 */
+@-webkit-keyframes popupLeaveAnimation {
+    0% { opacity: 1; scaleY: 1; }
+    100% { opacity: 0; scaleY: 0; }
+}
+
+@-moz-keyframes heart{
+  from{transform:translate(0,0)}
+  to{transform:translate(0,10px)}
+}
+@-moz-keyframes zoom{
+  0%{transform: scale(1);}
+  50%{transform: scale(1.01);}
+  100%{transform: scale(1);}
+}
+@-moz-keyframes uptxt{
+  0%{transform: scale(1);}
+  50%{transform: scale(1.3);}
+  100%{transform: scale(1);}
+}
+@-moz-keyframes expand {
+    0% { transform: scale(0); }
+    100% { transform: scale(1); }
+}
+/* 定义弹窗退出动画 */
+@-moz-keyframes popupLeaveAnimation {
+    0% { opacity: 1; scaleY: 1; }
+    100% { opacity: 0; scaleY: 0; }
+}
+
+@-o-keyframes heart{
+  from{transform:translate(0,0)}
+  to{transform:translate(0,10px)}
+}
+@-o-keyframes zoom{
+  0%{transform: scale(1);}
+  50%{transform: scale(1.01);}
+  100%{transform: scale(1);}
+}
+@-o-keyframes uptxt{
+  0%{transform: scale(1);}
+  50%{transform: scale(1.3);}
+  100%{transform: scale(1);}
+}
+@-o-keyframes expand {
+    0% { transform: scale(0); }
+    100% { transform: scale(1); }
+}
+/* 定义弹窗退出动画 */
+@-o-keyframes popupLeaveAnimation {
+    0% { opacity: 1; scaleY: 1; }
+    100% { opacity: 0; scaleY: 0; }
+}
+
+@keyframes dot {
+  0% { content: '.'}
+  25% { content: '..'}
+  50% { content: '...'}
+  75% { content: ''}
+  100% { content: '.'}
+}
+
+@-webkit-keyframes dot {
+  0% { content: '.'}
+  25% { content: '..'}
+  50% { content: '...'}
+  75% { content: ''}
+  100% { content: '.'}
+}
+
+@-moz-keyframes dot {
+  0% { content: '.'}
+  25% { content: '..'}
+  50% { content: '...'}
+  75% { content: ''}
+  100% { content: '.'}
+}
+
+@-o-keyframes dot {
+  0% { content: '.'}
+  25% { content: '..'}
+  50% { content: '...'}
+  75% { content: ''}
+  100% { content: '.'}
+}
+
+.text-stroke{
+  -webkit-text-stroke:4px transparent;
+  background:#5C2102;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  -o-background-clip: text;
+  background-clip: text;
+  padding: 0 1px;
+}
+
+.prize-stroke{
+  -webkit-text-stroke:8px transparent;
+  background:#b836f5;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  -o-background-clip: text;
+  background-clip: text;
+  padding: 0 1px;
+}
+
+.time-stroke{
+  -webkit-text-stroke:4px transparent;
+  background:#1d0aad;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  -o-background-clip: text;
+  background-clip: text;
+  padding: 0 1px;
+}
+
+.tips-div{
+  z-index: 9999;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: inherit;
+}
+
+.dot::after {
+  content: '';
+  animation: dot 2s infinite;
+  -webkit-animation: dot 2s infinite;
+  -moz-animation: dot 2s infinite;
+  -o-animation: dot 2s infinite;
+}
+
+
+.pvp-view{
+  background:#47326b url(../../assets/bg.png) no-repeat center top;
+  background-size: 100%;
+  width:750px;
+  height:1450px;
+  margin:0 auto 0;
+  font-family: myFirstFont;
+}
+
+.prize-pool{
+  width: 750px;
+  margin:0 auto 0;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .prize-content{
+    background: url(../../assets/pvp/prize-pool.png) no-repeat center top;
+    background-size: 100%;
+    width: 95%;
+    height: 320px;
+
+    .pool-div{
+      width: 100%;
+      height: 250px;
+
+      .prize-num{
+        position: relative;
+        top: 110px;
+        left: 140px;
+        font-size: 52px;
+        color: #fefefe;
+        font-weight: 800;
+        font-style: oblique;
+
+        em{
+          margin-right: 10px;
+          font-style: oblique;
+        }
+      }
+
+      .prize-time{
+        position: relative;
+        top: 148px;
+        left: 76px;
+        font-size: 30px;
+        color: #34d2f3;
+        font-weight: 600;
+        font-style: oblique;
+      }
+
+    }
+
+    .check-time{
+      position: relative;
+      top: 25px;
+      width: inherit;
+      text-align: center;
+      font-size: 24px;
+      color: #fff4d0;
+      font-weight: 500;
+
+      .history{
+        position: absolute;
+        top: -12px;
+        right: 1px;
+      }
+
+      .hbtn{
+          width:110px;
+          height:50px;
+          line-height: 48px;
+          background: url(../../assets/btn.png) no-repeat left center;
+          background-size: 100%;
+          font-size: 22px;
+
+          span{
+            text-align: center;
+            color:#FFD346;
+            display: block;
+          }
+      }
+    }
+  }
+}
+
+.rank-list,
+.my-rank{
+  width: 750px;
+  height: 600px;
+
+  .find-notice{
+    color: #FFD346;
+    font-weight: 500;
+    font-size: 28px;
+    text-align: center;
+    margin-top: 200px;
+  }
+
+  .rank{
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width:640px;
+    height:110px;
+    background: url(../../assets/content-bg.png) no-repeat center top;
+    background-size: 100%;
+    border: 4px solid #8c6a49;
+    border-radius: 15px;
+    display: flex;
+    justify-content: left;
+    align-items: top;
+
+    .rank-left{
+      height: 100px;
+      width: 120px;
+
+      div{
+        color: #FFD346;
+        font-weight: 600;
+        width: inherit;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .tl{
+        font-size: 30px;
+        margin-top: 15px;
+      }
+      .num{
+        font-size: 26px;
+        margin-top: 12px;
+      }
+    }
+    .rank-center{
+      height: 100px;
+      width: 340px;
+      padding-left: 10px;
+      color: #FFD346;
+      font-weight: 600;
+
+      .rk-player{
+        color: #fff4d0;
+        font-size: 26px;
+        margin-top: 16px;
+      }
+      .rk-atr{
+        font-size: 22px;
+        margin-top: 12px;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+
+        div{
+          margin-right: 15px;
+        }
+
+        .detail{
+          width: 32px;
+          height: 32px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          img{
+            width: 30px;
+            height: 30px;
+          }
+
+        }
+      }
+    }
+    .rank-right{
+      height: 100px;
+      width: 170px;
+      padding-right: 5px;
+      display: flex;
+      justify-content: right;
+      align-items: center;
+      .norwd{
+        color: #FFD346;
+        font-size: 22px;
+        width: 140px;
+        padding-right: 4px;
+        display: inline;
+      }
+      .rds{
+        width: 70px;
+        height: 70px;
+        background: url(../../assets/boss/goup-bg.png) no-repeat left center;
+        background-size: 100%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 5px;
+
+        img {
+          width: 55px;
+          height: 55px;
+        }
+
+        .itemNum {
+          text-align: right;
+          position: absolute;
+          right: -2px;
+          bottom: -2px;
+          font-size: 20px;
+          width: 100px;
+          color: #FFD346;
+          margin-left: 5px;
+          span{
+            padding-top: 5px;
+            padding-left: 2px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.rank-list{
+  overflow-y: scroll;
+}
+.rank-list::-webkit-scrollbar{
+    width: 0;
+    height: 10px;
+    background-color: #999999;
+  }
+.rank-list::-webkit-scrollbar-thumb{
+  background-color: #000;
+}
+
+.my-rank{
+  padding-top: 32px;
+  height: 410px;
+  background: url(../../assets/equip-bg.png) repeat-x;
+  color:#FFD346;
+
+  .rest{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .rank{
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width:640px;
+    height:110px;
+    background: url(../../assets/content-bg.png) no-repeat center top;
+    background-size: 100%;
+    border: 4px solid #8c6a49;
+    border-radius: 15px;
+  }
+
+  .btn{
+      width:230px;
+      height:100px;
+      margin:10px auto 0;
+      line-height: 90px;
+      background: url(../../assets/btn.png) no-repeat left center;
+      background-size: 100%;
+      font-size: 40px;
+      font-weight: 600;
+      animation: zoom .5s ease infinite;
+      -webkit-animation: zoom .5s ease infinite;
+      -moz-animation: zoom .5s ease infinite;
+      -o-animation: zoom .5s ease infinite;
+
+      span{
+        text-align: center;
+        color:#FFD346;
+        display: block;
+      }
+  }
+}
+
+
+.pvpbox{
+  .bgs{
+    width: 100%;
+    height:100%;
+    position: fixed;
+    left:0;
+    top:0;
+    background:url(../../assets/popbg.png);
+    z-index: 20;
+  }
+  .popbody{
+    width:600px;
+    position: fixed;
+    left:50%;
+    top: 230px;
+    margin-left:-300px;
+    z-index: 30;
+    font-family: myFirstFont;
+    animation: expand 0.1s ease-out forwards;
+    -webkit-animation: expand 0.1s ease-out forwards;
+    -moz-animation: expand 0.1s ease-out forwards;
+    -o-animation: expand 0.1s ease-out forwards;
+
+    .head{
+      width:100%;
+      height:150px;
+      background:url(../../assets/pop1.png) no-repeat left top;
+      background-size: 100%;
+      font-size:44px;
+      color:#FFD346;
+      text-align: center;
+      line-height: 140px;
+      position: relative;
+      .icon{
+        width: 110px;
+        height: 60px;
+        position: absolute;
+        left:-16px;
+        top:28%;
+        background:url(../../assets/NFTtag.png) no-repeat left top;
+        background-size: 100%;
+      }
+      .tips{
+        font-size:24px;
+        text-align:center;
+        color:#ff7b46;
+        width:100%;
+        position:absolute;
+        left:0;
+        bottom:-20px;
+      }
+    }
+    .middle{
+      width:100%;
+      background:url(../../assets/pop2.png) repeat-y left top;
+      background-size: 100%;
+
+      .pvp-base{
+        width:100%;
+        height:330px;
+
+        .avatar{
+          float: left;
+          width:300px;
+          height:330px;
+          img{
+            margin-top: -30px;
+            margin-left: -10px;
+            width: 340px;
+            height: 340px;
+          }
+        }
+
+        .pvp-atr{
+          float: left;
+          width: 300px;
+          height: 330px;
+          padding-left: 20px;
+          padding-top: 10px;
+          color: #FFD346;
+          font-size: 24px;
+          font-weight: 500;
+
+          .pvp-name{
+            font-size: 30px;
+            font-weight: 600;
+            margin-bottom: 30px;
+            color:rgb(255, 242, 207);
+
+            span{
+              font-size: 20px;
+              margin-left: 20px;
+            }
+          }
+
+          .dataline{
+            margin-bottom: 14px;
+            span{
+              margin-left: 10px;
+              color: #5aec52;
+            }
+          }
+        }
+      }
+
+      .equips{
+        width: 100%;
+        height: 200px;
+        padding-left: 50px;
+
+        .noinfo{
+          font-size: 22px !important;
+          color:#fff4d0 !important;
+        }
+
+        .base, .nfts{
+          width: 100%;
+          display: flex;
+          margin-bottom: 28px;
+
+          .baseequip, .nftequip{
+            width: 85px;
+            height:85px;
+            background: url(../../assets/item-bg-base.png) no-repeat left center;
+            background-size: 100%;
+            text-align: center;
+            position: relative;
+            margin-right: 20px;
+
+            img{width: 80%; height: 80%; margin-top: 8px;}
+
+            .star{
+              position: absolute;
+              left:-2px;
+              top:-2px;
+              background: url(../../assets/boss/star-icon.png) no-repeat left center;
+              background-size: 22px;
+              font-size: 22px;
+              color:#FFD346;
+              font-family: myFirstFont;
+              padding-left:26px;
+            }
+            .lv{
+              position: absolute;
+              left:10px;
+              bottom:0px;
+              font-size: 22px;
+              width: 100%;
+              text-align: right;
+              color:#FFD346;
+              padding-right:10px;
+              font-family: myFirstFont;
+            }
+          }
+        }
+
+        .nfts{
+          .nftequip{
+            background: url(../../assets/item-bg.png) no-repeat left center;
+            background-size: 100%;
+
+            .nftlv{
+              position: absolute;
+              left:-2px;
+              top:-2px;
+              background:  url(../../assets/boss/hgg.png) no-repeat left center;
+              background-size: 22px;
+              font-size: 22px;
+              color:#FFD346;
+              padding-left:24px;
+            }
+
+          }
+        }
+      }
+
+      .target-notice{
+          font-size: 28px;
+          color:#FFD346;
+          width: 100%;
+          height: 480px;
+          padding-top: 200px;
+
+          div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+          }
+
+          .no1{
+            color: #5aec52;
+            font-size: 32px;
+          }
+        }
+
+      .cl-list{
+        width: 100%;
+        height: 480px;
+
+        .choiced{
+          border: 4px solid #fff816 !important;
+          border-radius: 15px;
+          box-shadow: 0px 0px 8px #fff816;
+        }
+        .cl-rank{
+          position: relative;
+          margin: 0 auto;
+          margin-bottom: 12px;
+          width:540px;
+          height:100px;
+          background: url(../../assets/content-bg.png) no-repeat center top;
+          background-size: 100%;
+          border: 4px solid #8c6a49;
+          border-radius: 15px;
+          display: flex;
+          justify-content: right;
+          align-items: top;
+
+          .rank-left{
+            height: 100px;
+            width: 90px;
+
+            div{
+              color: #FFD346;
+              font-weight: 500;
+              width: inherit;
+              margin: 0 auto;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+            .tl{
+              font-size: 24px;
+              margin-top: 15px;
+            }
+            .num{
+              font-size: 20px;
+              margin-top: 14px;
+            }
+          }
+          .rank-center{
+            height: 100px;
+            width: 320px;
+            padding-left: 2px;
+            color: #FFD346;
+            font-weight: 500;
+
+            .rk-player2{
+              color: #fff4d0;
+              font-size: 24px;
+              margin-top: 15px;
+            }
+            .pvp-atr2{
+              font-size: 20px;
+              margin-top: 8px;
+              display: flex;
+              justify-content: left;
+              align-items: center;
+
+              div{
+                margin-right: 15px;
+              }
+
+              .detail{
+                width: 32px;
+                height: 32px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img{
+                  width: 30px;
+                  height: 30px;
+                }
+
+              }
+            }
+          }
+          .rank-right{
+            height: 100px;
+            width: 140px;
+            display: flex;
+            justify-content: right;
+            align-items: center;
+            padding-right: 2px;
+            .norwd{
+              color: #FFD346;
+              font-size: 20px;
+              width: 120px;
+              text-align: right;
+              display: inline;
+              padding-right: 2px;
+            }
+            .rds{
+              width: 60px;
+              height: 60px;
+              background: url(../../assets/boss/goup-bg.png) no-repeat left center;
+              background-size: 100%;
+              position: relative;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              margin: 0 3px;
+              margin-right: 6px;
+              margin-bottom: 5px;
+
+              img {
+                width: 45px;
+                height: 45px;
+              }
+
+              .itemNum {
+                text-align: right;
+                position: absolute;
+                right: -2px;
+                bottom: -2px;
+                font-size: 18px;
+                width: 80px;
+                color: #FFD346;
+                margin-left: 3px;
+                span{
+                  padding-top: 5px;
+                  padding-left: 2px;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .settle-rule,
+      .pool-rule,
+      .challenge-rule{
+        width: 100%;
+        padding: 0 60px;
+        color: #FFD346;
+        font-size: 20px;
+        line-height: 40px;
+        .title{
+          font-size: 30px;
+          margin-bottom: 10px;
+        }
+      }
+
+      .settle-rule,
+      .challenge-rule{
+        margin-top: 40px;
+      }
+
+      .rwd-notice{
+        color: rgb(255, 242, 207);
+        text-align: center;
+        width: 100%;
+        height: 30px;
+        font-size: 22px;
+      }
+      .rk-rwd {
+        font-size: 60px;
+        padding-bottom: 40px;
+        color: rgb(255, 242, 207);
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .pic {
+          width: 100px;
+          min-width: 100px;
+          height: 100px;
+          background: url(../../assets/boss/goup-bg.png) no-repeat left center;
+          background-size: 100%;
+          padding: 16px;
+          position: relative;
+          float: left;
+          margin: 0 20px;
+
+          .lv {
+              position: absolute;
+              left: 10px;
+              bottom: -2px;
+              font-size: 28px;
+              width: 100%;
+              text-align: right;
+              color: #FFD346;
+              padding-right: 10px;
+          }
+
+          img {
+              width: 100%;
+              height: 100%;
+          }
+        }
+      }
+
+      .c-his{
+        width: 100%;
+        color: rgb(255, 242, 207);
+        font-size: 30px;
+
+        div{
+          padding-left: 60px;
+        }
+      }
+
+    }
+    .foots{
+      width:100%;
+      background:url(../../assets/pop3.png) no-repeat left top;
+      background-size: 100%;
+      height:200px;
+      overflow: hidden;
+
+      .f30{
+        color:#FFD346;
+        font-size:30px;
+        font-weight: 500;
+
+        .rest{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+
+      .cl-cost{
+        text-align: center;
+        font-size:24px;
+        color: rgb(255, 242, 207);
+        text-align:center;
+        line-height: 34px;
+        padding-top:10px;
+        p{margin-top:0px;}
+        .notice{
+          font-size: 26px;
+        }
+        img{
+          width: 30px;
+          height: 30px;
+          margin-right: 5px;
+          margin-left: 10px;
+        }
+      }
+
+      .btn{
+        width:216px;
+        height:80px;
+        margin:52px auto 0;
+        line-height: 80px;
+        background: url(../../assets/btn.png) no-repeat left center;
+        background-size: 100%;
+        font-size: 44px;
+        animation: zoom .5s ease infinite;
+        -webkit-animation: zoom .5s ease infinite;
+        -moz-animation: zoom .5s ease infinite;
+        -o-animation: zoom .5s ease infinite;
+        text-align: center;
+
+        span{
+          display: block;
+        }
+      }
+      .noani{
+        animation: none;
+        -webkit-animation: none;
+        -moz-animation: none;
+        -o-animation: none;
+      }
+
+      .fresh-cl{
+        width:80px;
+        height:80px;
+        position: absolute;
+        bottom:172px;
+        right: 45px;
+
+        img{
+          width: 75px;
+          height: 75px;
+        }
+      }
+
+    }
+    .close-btn{
+      width: 100%;
+      height:60px;
+      background:url(../../assets/close-btn.png) no-repeat center center;
+      background-size:10%;
+      margin-top:60px;
+      transform: scale(1);
+
+    }
+    .close-btn:active{
+      transform: scale(1.1);
+      animation: popupLeaveAnimation 0.4s ease forwards;
+      -webkit-animation: popupLeaveAnimation 0.4s ease forwards;
+      -moz-animation: popupLeaveAnimation 0.4s ease forwards;
+      -o-animation: popupLeaveAnimation 0.4s ease forwards;
+    }
+  }
+}
+
+.subbox{
+  .bgs{
+    z-index: 40 !important;
+  }
+  .popbody{
+    z-index: 60 !important;
+  }
+  .playerinfo{
+    top: 230px;
+  }
+}
+
+
+
+
+
+

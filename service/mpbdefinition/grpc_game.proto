@@ -1,0 +1,161 @@
+syntax = "proto3";
+
+package mpb;
+
+option go_package = "./mpb";
+
+import "common.proto";
+import "resource.proto";
+
+service GameService {
+    rpc GetHiddenBoss(ReqGetHiddenBoss) returns (ResGetHiddenBoss);
+    rpc Fight(ReqFight) returns (ResFight);
+    rpc FightPVP(ReqFightPVP) returns (ResFightPVP);
+    rpc GetPVPInfo(ReqUserId) returns (ResGetPVPInfo);
+    rpc GetPVPRanks(ReqGetPVPRanks) returns (ResGetPVPRanks);
+    rpc GetPVPChallengeTargets(ReqUserId) returns (ResGetPVPChallengeTargets);
+    rpc GetEnergy(ReqUserId) returns (ResGetEnergy);
+    rpc AddEnergy(ReqAddEnergy) returns (ResAddEnergy);
+    rpc GetRandomHiddenBoss(ReqGetHiddenBoss) returns (ResGetHiddenBoss);
+    rpc NewHiddenBoss(ReqNewHiddenBoss) returns (ResNewHiddenBoss);
+    rpc GetGameInfo(ReqUserId) returns (ResGetGameInfo);
+    rpc GetPVPHistory(Empty) returns (ResGetPVPHistory);
+    rpc RandomBuffCards(ReqRandomBuffCards) returns (ResRandomBuffCards);
+    rpc ChoseBuffCard(ReqChoseBuffCard) returns (ResChoseBuffCard);
+
+    rpc AdminRecoverEnergy(ReqUserId) returns (Empty);
+}
+
+message ReqFight {
+    uint64 user_id = 1;
+    uint32 boss_id = 2;
+    uint64 boss_uuid = 3;
+    bool with_boss_detail = 4;
+}
+
+message ResFight {
+    bool win = 1;
+    bool boss_die = 2;
+    repeated FightDetail details = 3;
+    CAwards awards = 4;
+    uint32 energy_cost = 5;
+    uint32 energy = 6;
+    int64 energy_recover_at = 7;
+    uint64 dmg = 8;
+    uint64 dmg_rate = 9;
+    HiddenBoss hidden_boss = 10;
+    uint64 boss_hp = 11;
+    uint64 player_hp = 12;
+    BossRsc boss_rsc = 13;
+    repeated BuffCard buff_cards = 14;
+    EGame.BuffCardStatus buff_card_status = 15;
+}
+
+message ResGetEnergy {
+    uint32 energy = 1;
+    int64 update_at = 2;
+}
+
+message ReqAddEnergy {
+    uint64 user_id = 1;
+    uint32 energy = 2;
+}
+
+message ResAddEnergy {
+    uint32 energy = 1;
+    int64 update_at = 2;
+}
+
+message ReqGetHiddenBoss {
+    uint64 user_id = 1;
+    uint64 boss_uuid = 2;
+    bool with_boss_detail = 3;
+}
+
+message ResGetHiddenBoss {
+    HiddenBoss hidden_boss = 1;
+    bool fought = 2;
+    int64 fight_cd = 3;
+    repeated HiddenBossFightHistory histories = 4;
+    BossRsc boss_rsc = 5;
+}
+
+message ReqNewHiddenBoss {
+    uint64 user_id = 1;
+    uint32 boss_id = 2;
+}
+
+message ResNewHiddenBoss {
+    HiddenBoss hidden_boss = 1;
+}
+
+message ResGetGameInfo {
+    uint32 energy = 1;
+    int64 update_at = 2;
+    BossDefeatHistory boss_defeat_history = 3;
+    repeated BuffCard buff_cards = 4;
+    EGame.BuffCardStatus buff_card_status = 5;
+}
+
+message ReqFightPVP {
+    uint64 user_id = 1;
+    uint64 target_id = 2;
+    uint32 target_rank = 3;
+}
+
+message ResFightPVP {
+    bool win = 1;
+    uint32 old_rank = 2;
+    uint32 new_rank = 3;
+    uint64 challenger_hp = 4;
+    uint64 defender_hp = 5;
+    repeated FightDetail details = 6;
+    uint32 pvp_challenge_cnt = 7;
+    int64 pvp_challenge_cnt_update_at = 8;
+    uint64 mana = 9;
+}
+
+message ResGetPVPInfo {
+    uint32 rank = 1;
+    uint32 challenger_cnt = 2;
+    int64 challenger_cnt_update_at = 3;
+    repeated PVPSettleRewards pvp_settle_rewards = 4;
+    uint32 pvp_season_date = 5; // 20240101
+    uint64 pvp_mana_awards_pool = 6;
+}
+
+message ReqGetPVPRanks {
+    uint32 page_num = 1;
+}
+
+message ResGetPVPRanks {
+    uint32 page_num = 1;
+    repeated PVPRankNode rank_list = 2;
+}
+
+message ResGetPVPChallengeTargets {
+    repeated PVPRankNode target_list = 1;
+}
+
+message ResGetPVPHistory {
+    repeated PVPHistory list = 1;
+}
+
+message ReqRandomBuffCards {
+    uint64 user_id = 1;
+    uint32 boss_id = 2;
+}
+
+message ResRandomBuffCards {
+    uint32 boss_id = 1;
+    repeated uint32 buff_cards = 2;
+}
+
+message ReqChoseBuffCard {
+    uint64 user_id = 1;
+    uint32 buff_card = 2;
+}
+
+message ResChoseBuffCard {
+    repeated uint32 buff_cards = 1;
+}

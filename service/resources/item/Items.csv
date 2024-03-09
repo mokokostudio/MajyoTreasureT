@@ -1,0 +1,12 @@
+ItemId,ItemType,Name,NameStringKey,Desc,IsUnique
+int,int,string,string,string,bool
+ItemId,Item类型,名称,名称StringKey用于多语言展示,描述,是否唯一(不可堆叠)
+10,1,升级材料,ITEM_10,,false
+11,1,升星材料1,ITEM_11,,false
+12,1,升星材料2,ITEM_12,,false
+13,1,升星材料3,ITEM_13,,false
+14,1,升星材料4,ITEM_14,,false
+15,1,升星材料5,ITEM_15,,false
+110001,1,装备1,ITEM_110001,,true
+91000001,91,玛娜,ITEM_MANA,,false
+92000001,92,体力,ITEM_ENERGY,,false

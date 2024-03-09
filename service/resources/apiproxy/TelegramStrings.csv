@@ -1,0 +1,34 @@
+Key,Description,ZH-HANS,ZH-HANT,EN
+string,string,string,string,string
+key,描述,简体中文,繁体中文,英文用`(键盘1左边按键)代替英文逗号
+ERR_IN_FIGHT_CD,,[color=#FF4844]您好<b>%s</b>，您当前正处于在战斗CD中，无法进行战斗！[/color],您好<b>%s</b>，您当前正处于在战斗CD中，无法进行战斗！,Hi <b>%s</b>` you are in fight cd!
+ERR_NO_REQUESTED_NFT_WEAPON,,您好<b>%s</b>，您当前未装备战斗所需的NFT武器，无法进行战斗！,您好<b>%s</b>，您当前未装备战斗所需的NFT武器，无法进行战斗！,Hi <b>%s</b>` you do not currently have the requested NFT weapons equipped.
+ERR_NOT_MEET_NFT_WEAPON_LEVEL,,您好<b>%s</b>，您装备的NFT武器未满足等级需求，无法进行战斗！,您好<b>%s</b>，您装备的NFT武器未满足等级需求，无法进行战斗！,Hi <b>%s</b>` the NFT weapons you are equipped does not meet the level requirements.
+ERR_ALREADY_FOUGHT,,您好<b>%s</b>，您已经对该Boss发起过战斗，无法再次战斗！,您好<b>%s</b>，您已经对该Boss发起过战斗，无法再次战斗！,Hi <b>%s</b>` you have already fought the boss.
+BOSS_DIED_OR_ESCAPED,,Boss已经阵亡或逃跑！,Boss已经阵亡或逃跑！,Boss died or escaped!
+BOSS_HAS_BEEN_DEFEATED,,<b>%s</b>成功击败了Boss%s,<b>%s</b>成功击败了Boss%s,<b>%s</b> has defeated the boss <b>%s</b> !
+BOSS_WIN_REWARDS,,<b>%s</b>，恭喜获得战斗奖励：<b>%s</b>！请进入游戏查看！,<b>%s</b>恭喜获得战斗奖励：<b>%s</b>！请进入游戏查看！,<b>%s</b>` you have won the rewards：<b>%s</b>！Check in the game!
+BOSS_WIN_NO_REWARDS,,<b>%s</b>，很遗憾，由于您对Boss造成的伤害不足1%，无法获得奖励！,<b>%s</b>，很遗憾，由于您对Boss造成的伤害不足1%，无法获得奖励！,"<b>%s</b>` sorry，your damage is less then 1%, can not get the rewards!"
+BOSS_INVITE,,<b>%s</b>邀请您一起挑战Boss<b>%s</b>,<b>%s</b>邀请您一起挑战Boss<b>%s</b>,<b>%s</b> invite you to fight boss <b>%s</b>!
+BOSS_APPEARED,,Boss<b>%s</b>出现了，快来一起挑战吧！,Boss<b>%s</b>出现了，快来一起挑战吧！,Boss <b>%s</b> has appeared` come to fight together!
+BOSS_HP,,Boss HP <b>%d/%d</b> ！,Boss HP <b>%d/%d</b> ！,Boss HP <b>%d/%d</b> !
+BOSS_EXPIRE_AT,,Boss将在%s后逃跑！,Boss将在%s后逃跑！,Boss will escape in <b>%s</b> !
+BOSS_DMG_CASED_BY_PLAYER,,<b>%s</b>对Boss造成了<b>%s</b>的伤害。,<b>%s</b>对Boss造成了<b>%s</b>的伤害。,<b>%s</b> caused <b>%s</b> damage to the boss.
+BUTTON_FIGHT,,挑战！,挑战！,Fight!
+BUTTON_PLAY_GAME,,⚔️玩游戏,⚔️玩游戏,⚔️PlayGame
+BUTTON_WALLET,,钱包,钱包,Wallet
+BUTTON_NFT_MARKET,,NFT市场,NFT市场,NFT Market
+BUTTON_ASK_ENERGY,,请求体力,请求体力,Ask For Energy
+BUTTON_SETTING,,设置,设置,Setting
+BUTTON_SET_LAN_EN,,English,English,English
+BUTTON_SET_LAN_ZH_HANS,,简体中文,简体中文,简体中文
+BUTTON_SET_LAN_ZH_HANT,,繁体中文,繁体中文,繁体中文
+ITEM_10,,升级材料,升级材料,升级材料
+ITEM_11,,升星材料1,升星材料1,升星材料1
+ITEM_12,,升星材料2,升星材料2,升星材料2
+ITEM_13,,升星材料3,升星材料3,升星材料3
+ITEM_14,,升星材料4,升星材料4,升星材料4
+ITEM_15,,升星材料5,升星材料5,升星材料5
+ITEM_110001,,装备1,装备1,装备1
+ITEM_MANA,,玛娜,玛娜,玛娜
+ITEM_ENERGY,,体力,体力,体力

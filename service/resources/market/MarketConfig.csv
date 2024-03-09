@@ -1,0 +1,4 @@
+OnSellOrderCnt,OpenSellAfter,MinPrice,MaxSellCnt,MaxPrice
+int,int,int,int,int
+销售中订单数量,上架后多久开售(秒),最低总价(万倍值),每单最多出售数量,最高总价
+8,60,2,10000000,1000000000000000000

@@ -1,0 +1,842 @@
+@font-face{
+  font-family: myFirstFont;
+  src: url(../../assets/ShanghaiFace-SenGBT-Flash.ttf)
+}
+
+body{
+  background:#47326b;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@keyframes upsuccess {
+  100% {background-image: url(../../assets/frameimg/upsuccess.gif);}
+}
+@-webkit-keyframes upsuccess {
+  100% {background-image: url(../../assets/frameimg/upsuccess.gif);}
+}
+@-moz-keyframes upsuccess{
+  100% { background-image: url(../../assets/frameimg/upsuccess.gif); } /* 第一帧图片路径 */
+}
+@-o-keyframes upsuccess{
+  100% { background-image: url(../../assets/frameimg/upsuccess.gif); } /* 第一帧图片路径 */
+}
+
+@keyframes slidein-next{
+  from { opacity: 0; transform: translateX(+200px); }
+  to { opacity: 1; transform: translateX(0px); }
+}
+@keyframes slideout-next{
+  from { opacity: 1; transform: translateX(0px); }
+  to { opacity: 0; transform: translateX(-140px); }
+}
+@keyframes slidein-prev{
+  from { opacity: 0; transform: translateX(-200px); }
+  to { opacity: 1; transform: translateX(0px); }
+}
+@keyframes slideout-prev{
+  from { opacity: 1; transform: translateX(0px); }
+  to { opacity: 0; transform: translateX(+140px); }
+}
+
+@-webkit-keyframes slidein-next{
+  from { opacity: 0; transform: translateX(+200px); }
+  to { opacity: 1; transform: translateX(0px); }
+}
+@-webkit-keyframes slideout-next{
+  from { opacity: 1; transform: translateX(0px); }
+  to { opacity: 0; transform: translateX(-140px); }
+}
+@-webkit-keyframes slidein-prev{
+  from { opacity: 0; transform: translateX(-200px); }
+  to { opacity: 1; transform: translateX(0px); }
+}
+@-webkit-keyframes slideout-prev{
+  from { opacity: 1; transform: translateX(0px); }
+  to { opacity: 0; transform: translateX(+140px); }
+}
+
+@-moz-keyframes slidein-next{
+  from { opacity: 0; transform: translateX(+200px); }
+  to { opacity: 1; transform: translateX(0px); }
+}
+@-moz-keyframes slideout-next{
+  from { opacity: 1; transform: translateX(0px); }
+  to { opacity: 0; transform: translateX(-140px); }
+}
+@-moz-keyframes slidein-prev{
+  from { opacity: 0; transform: translateX(-200px); }
+  to { opacity: 1; transform: translateX(0px); }
+}
+@-moz-keyframes slideout-prev{
+  from { opacity: 1; transform: translateX(0px); }
+  to { opacity: 0; transform: translateX(+140px); }
+}
+
+@-o-keyframes slidein-next{
+  from { opacity: 0; transform: translateX(+200px); }
+  to { opacity: 1; transform: translateX(0px); }
+}
+@-o-keyframes slideout-next{
+  from { opacity: 1; transform: translateX(0px); }
+  to { opacity: 0; transform: translateX(-140px); }
+}
+@-o-keyframes slidein-prev{
+  from { opacity: 0; transform: translateX(-200px); }
+  to { opacity: 1; transform: translateX(0px); }
+}
+@-o-keyframes slideout-prev{
+  from { opacity: 1; transform: translateX(0px); }
+  to { opacity: 0; transform: translateX(+140px); }
+}
+
+@keyframes heart{
+  from{transform:translate(0,0)}
+  to{transform:translate(0,10px)}
+}
+@keyframes zoom{
+  0%{transform: scale(1);}
+  50%{transform: scale(1.01);}
+  100%{transform: scale(1);}
+}
+@keyframes uptxt{
+  0%{transform: scale(1);}
+  50%{transform: scale(1.3);}
+  100%{transform: scale(1);}
+}
+@keyframes expand {
+    0% { transform: scale(0); }
+    100% { transform: scale(1); }
+}
+/* 定义弹窗退出动画 */
+@keyframes popupLeaveAnimation {
+    0% { opacity: 1; scaleY: 1; }
+    100% { opacity: 0; scaleY: 0; }
+}
+
+@-webkit-keyframes heart{
+  from{transform:translate(0,0)}
+  to{transform:translate(0,10px)}
+}
+@-webkit-keyframes zoom{
+  0%{transform: scale(1);}
+  50%{transform: scale(1.01);}
+  100%{transform: scale(1);}
+}
+@-webkit-keyframes uptxt{
+  0%{transform: scale(1);}
+  50%{transform: scale(1.3);}
+  100%{transform: scale(1);}
+}
+@-webkit-keyframes expand {
+    0% { transform: scale(0); }
+    100% { transform: scale(1); }
+}
+/* 定义弹窗退出动画 */
+@-webkit-keyframes popupLeaveAnimation {
+    0% { opacity: 1; scaleY: 1; }
+    100% { opacity: 0; scaleY: 0; }
+}
+
+@-moz-keyframes heart{
+  from{transform:translate(0,0)}
+  to{transform:translate(0,10px)}
+}
+@-moz-keyframes zoom{
+  0%{transform: scale(1);}
+  50%{transform: scale(1.01);}
+  100%{transform: scale(1);}
+}
+@-moz-keyframes uptxt{
+  0%{transform: scale(1);}
+  50%{transform: scale(1.3);}
+  100%{transform: scale(1);}
+}
+@-moz-keyframes expand {
+    0% { transform: scale(0); }
+    100% { transform: scale(1); }
+}
+/* 定义弹窗退出动画 */
+@-moz-keyframes popupLeaveAnimation {
+    0% { opacity: 1; scaleY: 1; }
+    100% { opacity: 0; scaleY: 0; }
+}
+
+@-o-keyframes heart{
+  from{transform:translate(0,0)}
+  to{transform:translate(0,10px)}
+}
+@-o-keyframes zoom{
+  0%{transform: scale(1);}
+  50%{transform: scale(1.01);}
+  100%{transform: scale(1);}
+}
+@-o-keyframes uptxt{
+  0%{transform: scale(1);}
+  50%{transform: scale(1.3);}
+  100%{transform: scale(1);}
+}
+@-o-keyframes expand {
+    0% { transform: scale(0); }
+    100% { transform: scale(1); }
+}
+/* 定义弹窗退出动画 */
+@-o-keyframes popupLeaveAnimation {
+    0% { opacity: 1; scaleY: 1; }
+    100% { opacity: 0; scaleY: 0; }
+}
+
+@keyframes dot {
+  0% { content: '.'}
+  25% { content: '..'}
+  50% { content: '...'}
+  75% { content: ''}
+  100% { content: '.'}
+}
+
+@-webkit-keyframes dot {
+  0% { content: '.'}
+  25% { content: '..'}
+  50% { content: '...'}
+  75% { content: ''}
+  100% { content: '.'}
+}
+
+@-moz-keyframes dot {
+  0% { content: '.'}
+  25% { content: '..'}
+  50% { content: '...'}
+  75% { content: ''}
+  100% { content: '.'}
+}
+
+@-o-keyframes dot {
+  0% { content: '.'}
+  25% { content: '..'}
+  50% { content: '...'}
+  75% { content: ''}
+  100% { content: '.'}
+}
+
+.text-stroke{
+  -webkit-text-stroke:4px transparent;
+  background:#5C2102;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  -o-background-clip: text;
+  background-clip: text;
+  padding: 0 1px;
+}
+
+.tips-div{
+  z-index: 9999;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: inherit;
+}
+
+.dot::after {
+  content: '';
+  animation: dot 2s infinite;
+  -webkit-animation: dot 2s infinite;
+  -moz-animation: dot 2s infinite;
+  -o-animation: dot 2s infinite;
+}
+
+
+.market-view{
+  background:#47326b url(../../assets/bg.png) no-repeat center top;
+  background-size: 100%;
+  width:750px;
+  height:1450px;
+  margin:0 auto 0;
+  font-family: myFirstFont;
+
+  .goods-list,
+  .my-goods-list{
+    width: 750px;
+    height:950px;
+    margin-top: 40px;
+    max-height: 950px;
+    overflow-y: scroll;
+
+    .find-notice{
+      color: #FFD346;
+      width: 750px;
+      height:950px;
+      font-weight: 500;
+      font-size: 28px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .goods{
+      position: relative;
+      float: left;
+      margin:4px -2px 16px 22px;
+      width:340px;
+      height:120px;
+      background: url(../../assets/content-bg.png) no-repeat center top;
+      background-size: 100%;
+      border: 4px solid #8c6a49;
+      border-radius: 15px;
+
+      .goods-repoint{
+        position: absolute;
+        right:-6px;
+        top:-6px;
+        height: 20px;
+        width: 20px;
+        border-radius: 10px;
+        background-color: #ff4844;
+        box-shadow: 0 0 2px rgba(0, 0, 0, 0.7);
+      }
+
+      .goods-item{
+        width: 100%;
+        height: 65px;
+
+        .goods-icon{
+          float: left;
+          width: 60px;
+          height: 60px;
+          background: url(../../assets/boss/goup-bg.png) no-repeat left center;
+          background-size: 100%;
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 5px;
+
+          img {
+            width: 45px;
+            height: 45px;
+          }
+        }
+        .goods-info{
+          float: left;
+          margin-top: 4px;
+          font-size: 24px;
+          font-weight: 600;
+          color: #fff4d0;
+          width: 240px;
+          height: 60px;
+          display: flex;
+          justify-content: left;
+          align-items: center;
+
+          .goods-num{
+            color: #FFD346 !important;
+          }
+        }
+
+      }
+
+      .goods-sale-info{
+        width: 100%;
+        height: 40px;
+        margin-top: 5px;
+        color: #FFD346;
+
+        .goods-state{
+          float: left;
+          width: 100px;
+          height: 40px;
+          line-height: 40px;
+          margin-left: 10px;
+          font-size: 20px;
+        }
+
+        .goods-price{
+          float: right;
+          margin-right: 8px;
+          width: 200px;
+          height: 40px;
+          display: flex;
+          justify-content: right;
+          align-items: center;
+          font-size: 20px;
+
+          img{
+            width: 28px;
+            height: 30px;
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+
+    .more{
+      float: left;
+      width: 100%;
+    }
+
+    .more-btn{
+      width:158px;
+      height:60px;
+      margin:10px auto 0;
+      line-height: 50px;
+      background: url(../../assets/btn.png) no-repeat left center;
+      background-size: 100%;
+      font-size: 44px;
+      text-align: center;
+      color:#FFD346;
+      font-size:30px;
+      font-weight: 500;
+      span{
+        display: block;
+      }
+    }
+
+  }
+  .goods-list::-webkit-scrollbar{
+      width: 0;
+      height: 10px;
+      background-color: #999999;
+    }
+  .goods-list::-webkit-scrollbar-thumb{
+    background-color: #000;
+  }
+
+  .my-goods-list{
+    overflow-y: hidden !important;
+
+    .my-listed-items{
+      width: 750px;
+      height:560px;
+      overflow-y: hidden !important;
+
+      .notsale{
+        width: 750px;
+        height:550px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #FFD346;
+      }
+    }
+
+    .list-window{
+      width: 750px;
+      height:390px;
+
+      .list-body{
+        position: relative;
+        float: left;
+        margin:0px -2px 20px 22px;
+        width:700px;
+        height:390px;
+        background: url(../../assets/content-bg.png) no-repeat center top;
+        background-size: 100%;
+        border: 4px solid #8c6a49;
+        border-radius: 15px;
+
+        .list-item{
+          width: inherit;
+          height: 100px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          div{
+            float: left;
+            width: 80px;
+            height: 80px;
+            background: url(../../assets/boss/goup-bg.png) no-repeat left center;
+            background-size: 100%;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;
+
+
+            img {
+              width: 58px;
+              height: 58px;
+              position: absolute;
+            }
+          }
+        }
+        .list-info{
+          width: inherit;
+          height: 150px;
+
+          .list-num,
+          .list-price{
+            width: inherit;
+            height: 70px;
+            margin-bottom: 0px;
+            font-size: 22px;
+            color: #fff4d0;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            padding-left: 120px;
+
+            img{
+              width: 38px;
+              height: 40px;
+              margin-right: 5px;
+            }
+
+            input[type="number"]{
+              background: url(../../assets/content-bg.png) no-repeat center top;
+              background-size: 100%;
+              border: 2px solid #8c6a49;
+              border-radius: 10px;
+              padding: 10px 12px;
+              font-size: 20px;
+              color: #fff4d0;
+              font-family: myFirstFont;
+              transition: border-color 0.3s ease-in-out;
+            }
+            input[type="number"]:focus {
+              -webkit-appearance: none;
+              -moz-appearance: none;
+              appearance: none;
+              outline:1px solid #8c6a49;
+            }
+            input::-webkit-inner-spin-button,
+            input::-webkit-outer-spin-button {
+              -webkit-appearance: none;
+              margin: 0;
+            }
+            /* 针对Firefox */
+            input[type="number"] {
+              -moz-appearance: textfield;
+            }
+
+            .input-placeholder::-webkit-input-placeholder { /* Chrome, Opera, Safari */
+              color: #999999; /* 你想要的颜色代码 */
+            }
+
+            .input-placeholder::-moz-placeholder { /* Firefox 18- */
+              color: #999999; /* 你想要的颜色代码 */
+              opacity: 1; /* 修复Firefox中的不透明度问题 */
+            }
+
+            .input-placeholder::-moz-placeholder { /* Firefox 19+ */
+              color: #999999; /* 你想要的颜色代码 */
+              opacity: 1; /* 修复Firefox中的不透明度问题 */
+            }
+
+            .input-placeholder:-ms-input-placeholder { /* Internet Explorer 10-11 */
+              color: #999999; /* 你想要的颜色代码 */
+            }
+          }
+          .list-price{
+            padding-left: 40px !important;
+          }
+        }
+
+        .list-deal{
+          width: inherit;
+          height: 130px;
+
+          .list-fee{
+            width: inherit;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff4d0;
+            font-size: 22px;
+
+            img{
+              width: 25px;
+              height:30px;
+              margin: 5px 10px 0 10px;
+            }
+            .fee{
+              color: #FFD346 !important;
+            }
+          }
+
+          .list-btn{
+            width: inherit;
+            height: 90px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            div{
+              width:158px;
+              height:70px;
+              line-height: 65px;
+              background: url(../../assets/btn.png) no-repeat left center;
+              background-size: 100%;
+              font-size: 34px;
+              text-align: center;
+              color: #FFD346;
+              span{
+                display: block;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+  .goods-filter{
+    width: 750px;
+    height:370px;
+    margin-top: 10px;
+    background: url(../../assets/equip-bg.png) repeat-x;
+    padding-top: 10px;
+
+    .fliter-items{
+      width: 750px;
+      height:100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      div{
+        float: left;
+        width: 80px;
+        height: 80px;
+        background: url(../../assets/boss/goup-bg.png) no-repeat left center;
+        background-size: 100%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+
+
+        img {
+          width: 58px;
+          height: 58px;
+          position: absolute;
+        }
+      }
+
+      .fliter-choiced{
+        position: absolute;
+        top:-6px;
+        left: -6px;
+        width: 92px;
+        height: 92px;
+      }
+    }
+
+    .goods-dotype{
+      width: 750px;
+      height:130px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .g-btn{
+        width:180px;
+        height:80px;
+        line-height: 80px;
+        margin: 0 35px;
+        background: url(../../assets/btn-red.png) no-repeat left center;
+        background-size: 100%;
+        font-size: 44px;
+        text-align: center;
+        color: #fff4d0;
+        font-size:30px;
+        font-weight: 500;
+        span{
+          display: block;
+        }
+      }
+      .g-btn-unable{
+        width:180px;
+        height:80px;
+        line-height: 80px;
+        margin: 0 35px;
+        background: url(../../assets/btn-unable.png) no-repeat left center;
+        background-size: 100%;
+        font-size: 44px;
+        text-align: center;
+        color: #fff4d0;
+        font-size:30px;
+        font-weight: 500;
+        span{
+          display: block;
+        }
+      }
+    }
+  }
+
+}
+
+
+
+
+.marketbox{
+  .bgs{
+    width: 100%;
+    height:100%;
+    position: fixed;
+    left:0;
+    top:0;
+    background:url(../../assets/popbg.png);
+    z-index: 20;
+  }
+  .popbody{
+    width:600px;
+    position: fixed;
+    left:50%;
+    top: 280px;
+    margin-left:-300px;
+    z-index: 30;
+    font-family: myFirstFont;
+    animation: expand 0.1s ease-out forwards;
+    -webkit-animation: expand 0.1s ease-out forwards;
+    -moz-animation: expand 0.1s ease-out forwards;
+    -o-animation: expand 0.1s ease-out forwards;
+
+    .head{
+      width:100%;
+      height:150px;
+      background:url(../../assets/pop1.png) no-repeat left top;
+      background-size: 100%;
+      font-size:44px;
+      color:#FFD346;
+      text-align: center;
+      line-height: 140px;
+      position: relative;
+      .icon{
+        width: 110px;
+        height: 60px;
+        position: absolute;
+        left:-16px;
+        top:28%;
+        background:url(../../assets/NFTtag.png) no-repeat left top;
+        background-size: 100%;
+      }
+
+    }
+    .middle{
+      width:100%;
+      background:url(../../assets/pop2.png) repeat-y left top;
+      background-size: 100%;
+
+      .order-item{
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .order-item-info{
+          float: left;
+          width: 80px;
+          height: 80px;
+          background: url(../../assets/boss/goup-bg.png) no-repeat left center;
+          background-size: 100%;
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 10px;
+
+          img {
+            width: 58px;
+            height: 58px;
+            position: absolute;
+          }
+        }
+      }
+
+      .order-sale-info{
+        font-size: 25px;
+        color: #FFD346;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+          width: 30px;
+          height:36px;
+          margin: -4px 10px 0 10px;
+        }
+      }
+    }
+
+    .foots{
+      width:100%;
+      background:url(../../assets/pop3.png) no-repeat left top;
+      background-size: 100%;
+      height:200px;
+      overflow: hidden;
+
+      .f30{
+        color:#FFD346;
+        font-size:30px;
+        font-weight: 500;
+
+        .rest{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+
+
+      .btn{
+        width:216px;
+        height:80px;
+        margin:52px auto 0;
+        line-height: 80px;
+        background: url(../../assets/btn.png) no-repeat left center;
+        background-size: 100%;
+        font-size: 44px;
+        animation: zoom .5s ease infinite;
+        -webkit-animation: zoom .5s ease infinite;
+        -moz-animation: zoom .5s ease infinite;
+        -o-animation: zoom .5s ease infinite;
+        text-align: center;
+
+        span{
+          display: block;
+        }
+      }
+      .noani{
+        animation: none;
+        -webkit-animation: none;
+        -moz-animation: none;
+        -o-animation: none;
+      }
+
+
+    }
+    .close-btn{
+      width: 100%;
+      height:60px;
+      background:url(../../assets/close-btn.png) no-repeat center center;
+      background-size:10%;
+      margin-top:60px;
+      transform: scale(1);
+
+    }
+    .close-btn:active{
+      transform: scale(1.1);
+      animation: popupLeaveAnimation 0.4s ease forwards;
+      -webkit-animation: popupLeaveAnimation 0.4s ease forwards;
+      -moz-animation: popupLeaveAnimation 0.4s ease forwards;
+      -o-animation: popupLeaveAnimation 0.4s ease forwards;
+    }
+  }
+}
+
+
+
+
+
+
+

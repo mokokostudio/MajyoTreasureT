@@ -1,0 +1,4 @@
+PVPSeasonId,DailyPVPFreeChallengeCnt,PVPManaConsume,RankRanges,ChallengeTarget1COE,ChallengeTarget2COE,ChallengeTarget3COE
+int,int,int,string,string,string,string
+赛季id,每日pvp免费挑战次数,PVP玛娜消耗,名次区间,挑战目标1计算系数,挑战目标2计算系数,挑战目标3计算系数
+1,5,1,1:1;2:10;11:20;21:50;51:100;101:200;201:500;501:1000;1001:2000;2001:5000;5001:10000,0.1:0.39,0.4:0.69,0.7:0.99

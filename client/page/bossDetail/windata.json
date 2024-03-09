@@ -1,0 +1,177 @@
+{
+    "win": true,
+    "details": [
+        {
+            "be_attacker": 1,
+            "hp_before": 29010,
+            "hp_after": 27232,
+            "dmg": 1778,
+            "attack_time": 6000
+        },
+        {
+            "attacker_type": 1,
+            "hp_before": 17530,
+            "hp_after": 14339,
+            "dmg": 3191,
+            "attack_time": 9000
+        },
+        {
+            "be_attacker": 1,
+            "hp_before": 27232,
+            "hp_after": 27232,
+            "is_miss": true,
+            "attack_time": 12000
+        },
+        {
+            "be_attacker": 1,
+            "hp_before": 27232,
+            "hp_after": 25522,
+            "dmg": 1710,
+            "attack_time": 18000
+        },
+        {
+            "attacker_type": 1,
+            "hp_before": 14339,
+            "hp_after": 11206,
+            "dmg": 3133,
+            "attack_time": 18000
+        },
+        {
+            "be_attacker": 1,
+            "hp_before": 25522,
+            "hp_after": 23864,
+            "dmg": 1658,
+            "attack_time": 24000
+        },
+        {
+            "attacker_type": 1,
+            "hp_before": 11206,
+            "hp_after": 8218,
+            "dmg": 2988,
+            "attack_time": 27000
+        },
+        {
+            "be_attacker": 1,
+            "hp_before": 23864,
+            "hp_after": 21983,
+            "dmg": 1881,
+            "attack_time": 30000
+        },
+        {
+            "be_attacker": 1,
+            "hp_before": 21983,
+            "hp_after": 18905,
+            "dmg": 3078,
+            "is_cri": true,
+            "attack_time": 36000
+        },
+        {
+            "attacker_type": 1,
+            "hp_before": 8218,
+            "hp_after": 8218,
+            "is_miss": true,
+            "attack_time": 36000
+        },
+        {
+            "be_attacker": 1,
+            "hp_before": 18905,
+            "hp_after": 15417,
+            "dmg": 3488,
+            "is_cri": true,
+            "attack_time": 42000
+        },
+        {
+            "attacker_type": 1,
+            "hp_before": 8218,
+            "hp_after": 5056,
+            "dmg": 3162,
+            "attack_time": 45000
+        },
+        {
+            "be_attacker": 1,
+            "hp_before": 15417,
+            "hp_after": 12271,
+            "dmg": 3146,
+            "is_cri": true,
+            "attack_time": 48000
+        },
+        {
+            "be_attacker": 1,
+            "hp_before": 12271,
+            "hp_after": 10459,
+            "dmg": 1812,
+            "attack_time": 54000
+        },
+        {
+            "attacker_type": 1,
+            "hp_before": 5056,
+            "hp_after": 2155,
+            "dmg": 2901,
+            "attack_time": 54000
+        },
+        {
+            "be_attacker": 1,
+            "hp_before": 10459,
+            "hp_after": 8681,
+            "dmg": 1778,
+            "attack_time": 60000
+        },
+        {
+            "attacker_type": 1,
+            "hp_before": 2155,
+            "hp_after": 2155,
+            "is_miss": true,
+            "attack_time": 63000
+        },
+        {
+            "be_attacker": 1,
+            "hp_before": 8681,
+            "hp_after": 6903,
+            "dmg": 1778,
+            "attack_time": 66000
+        },
+        {
+            "be_attacker": 1,
+            "hp_before": 6903,
+            "hp_after": 3245,
+            "dmg": 3658,
+            "is_cri": true,
+            "attack_time": 72000
+        },
+        {
+            "attacker_type": 1,
+            "hp_before": 2155,
+            "dmg": 2155,
+            "attack_time": 72000
+        }
+    ],
+    "awards": {
+        "add_items": [
+            {
+                "item_id": 10,
+                "num": 1940,
+                "itemPic": "/static/img/10.70c126c.png"
+            }
+        ],
+        "update_items": [
+            {
+                "item_id": 10,
+                "num": 59845
+            }
+        ]
+    },
+    "energy_cost": 10,
+    "energy": 190,
+    "energy_recover_at": 1706593378,
+    "dmg": 25765,
+    "dmg_rate": 8881,
+    "hidden_boss": {
+        "boss_id": 20037,
+        "boss_uuid": 356866101086273,
+        "hp": 64860,
+        "finder": 10000008,
+        "expire_at": 1706602378
+    },
+    "boss_hp": 29010,
+    "player_hp": 17530
+}

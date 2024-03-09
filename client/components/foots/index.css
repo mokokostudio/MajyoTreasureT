@@ -1,0 +1,176 @@
+@keyframes expand {
+      0% {
+        transform: scale(0);
+      }
+      100% {
+        transform: scale(1);
+      }
+  }
+
+/* 定义弹窗退出动画 */
+@keyframes popupLeaveAnimation {
+    0% {
+        opacity: 1; /* 初始状态完全可见 */
+        scaleY: 1; /* Y轴缩放为1，还原到正常大小 */
+    }
+    100% {
+        opacity: 0; /* 最终状态不可见 */
+        scaleY: 0; /* Y轴缩放为0，从而看起来没有高度 */
+    }
+}
+
+.text-stroke{
+  -webkit-text-stroke:4px transparent;
+  background:#5C2102;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  -o-background-clip: text;
+  background-clip: text;
+  padding: 0 1px;
+}
+
+.bfoot{
+  display: flex;
+  flex-wrap:wrap;
+  width:750px;
+  position: absolute;
+  top: 1330px;
+
+  .item{
+    width: 130px;
+    height:120px;
+
+    margin-left: 45px;
+    background: url(../../assets/boss/foot-btn.png) no-repeat left bottom;
+    background-size: 100%;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+    .gray{
+      filter: grayscale(100%);
+      -webkit-filter: grayscale(100%);
+    }
+  }
+  .fons{
+    background: url(../../assets/boss/foot-btn-on.png) no-repeat left bottom;
+    background-size: 100%;
+  }
+  .tips-div{
+    z-index: 9999;
+    position: absolute;
+    top: -1330px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: inherit;
+  }
+}
+
+/* popbox */
+.footbox{
+  .bgs{
+    width: 100%;
+    height:100%;
+    position: fixed;
+    left:0;
+    top:0;
+    background:url(../../assets/popbg.png);
+    z-index: 22;
+  }
+  .pkpop{
+    top: 350px !important;
+  }
+  .popbody{
+    width:600px;
+    position: fixed;
+    display: inline-block;
+    left:50%;
+    top:250px;
+    margin-left:-300px;
+    z-index: 30;
+    font-family: myFirstFont;
+    animation: expand 0.1s ease-out forwards;
+    -webkit-animation: expand 0.1s ease-out forwards;
+  
+    .head{
+      width:100%;
+      height:172px;
+      background:url(../../assets/pop1.png) no-repeat left top;
+      background-size: 100%;
+      font-size:44px;
+      -webkit-text-stroke: 0.5px #5C2102;
+      color:#FFD346;
+      text-align: center;
+      line-height: 140px;
+      position: relative;
+    }
+    .middle{
+      width:100%;
+      background:url(../../assets/pop2.png) repeat-y left top;
+      background-size: 100%;
+  
+      .content{
+        font-size: 28px;
+        margin-top: -30px;
+        z-index: 10;
+        position: relative;
+  
+        div{
+          color:#ff4844;
+          font-size:30px;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-top: 30px;
+        }
+      }
+    }
+  
+    .foots{
+      width:100%;
+      background:url(../../assets/pop3.png) no-repeat left top;
+      background-size: 100%;
+      height:200px;
+      overflow: hidden;
+      padding:0 30px;
+  
+      .f30{
+        font-size:30px;
+        color:#FFD346;
+        font-weight: 800;
+      }
+    }
+    .close-btn{
+      width: 100%;
+      height:60px;
+      background:url(../../assets/close-btn.png) no-repeat center center;
+      background-size:10%;
+      margin-top:60px;
+      transform: scale(1);
+  
+    }
+    .close-btn:active{
+      transform: scale(1.1);
+      animation: popupLeaveAnimation 0.4s ease forwards;
+    }
+  
+    .btn{
+      width:216px;
+      height:80px;
+      margin:12px auto 0;
+      line-height: 80px;
+      background: url(../../assets/btn.png) no-repeat left center;
+      background-size: 100%;
+      font-size: 44px;
+      animation: zoom .5s ease infinite;
+      -webkit-animation: zoom .5s ease infinite;
+      text-align: center;
+      span{
+        display: block;
+      }
+    }
+  }
+}
+

@@ -1,0 +1,8 @@
+Id,NickName,Icon,BaseEquipsLevels,BaseEquipsStars
+int,string,string,string,string
+BotId(9000001-9999999),Bot名字,Bot头像,基础装备等级列表,基础装备星数列表
+9000001,啊啊啊,https://mirror-realms.io/mor_boss/mimir1.jpg,1;1;1;1;1,1;2;2;2;2
+9000002,窝窝窝,https://mirror-realms.io/mor_boss/mimir1.jpg,1;1;1;1;1,1;2;2;2;2
+9000003,呃呃呃,https://mirror-realms.io/mor_boss/mimir1.jpg,1;1;1;1;1,1;2;2;2;2
+9000004,一一一,https://mirror-realms.io/mor_boss/mimir1.jpg,1;1;1;1;1,1;2;2;2;2
+9000005,呜呜呜,https://mirror-realms.io/mor_boss/mimir1.jpg,1;1;1;1;1,1;2;2;2;2

@@ -1,0 +1,188 @@
+{
+    "details": [
+        {
+            "be_attacker": 1,
+            "hp_before": 32440,
+            "hp_after": 32440,
+            "is_miss": true,
+            "attack_time": 6000
+        },
+        {
+            "attacker_type": 1,
+            "hp_before": 17530,
+            "hp_after": 17530,
+            "is_miss": true,
+            "attack_time": 9000
+        },
+        {
+            "be_attacker": 1,
+            "hp_before": 32440,
+            "hp_after": 32440,
+            "is_miss": true,
+            "attack_time": 12000
+        },
+        {
+            "be_attacker": 1,
+            "hp_before": 32440,
+            "hp_after": 32440,
+            "is_miss": true,
+            "attack_time": 18000
+        },
+        {
+            "attacker_type": 1,
+            "hp_before": 17530,
+            "hp_after": 17530,
+            "is_miss": true,
+            "attack_time": 18000
+        },
+        {
+            "be_attacker": 1,
+            "hp_before": 32440,
+            "hp_after": 30662,
+            "dmg": 1778,
+            "attack_time": 24000
+        },
+        {
+            "attacker_type": 1,
+            "hp_before": 17530,
+            "hp_after": 13995,
+            "dmg": 3535,
+            "attack_time": 27000
+        },
+        {
+            "be_attacker": 1,
+            "hp_before": 30662,
+            "hp_after": 28867,
+            "dmg": 1795,
+            "attack_time": 30000
+        },
+        {
+            "be_attacker": 1,
+            "hp_before": 28867,
+            "hp_after": 27072,
+            "dmg": 1795,
+            "attack_time": 36000
+        },
+        {
+            "attacker_type": 1,
+            "hp_before": 13995,
+            "hp_after": 10914,
+            "dmg": 3081,
+            "attack_time": 36000
+        },
+        {
+            "be_attacker": 1,
+            "hp_before": 27072,
+            "hp_after": 25226,
+            "dmg": 1846,
+            "attack_time": 42000
+        },
+        {
+            "attacker_type": 1,
+            "hp_before": 10914,
+            "hp_after": 7346,
+            "dmg": 3568,
+            "attack_time": 45000
+        },
+        {
+            "be_attacker": 1,
+            "hp_before": 25226,
+            "hp_after": 23602,
+            "dmg": 1624,
+            "attack_time": 48000
+        },
+        {
+            "be_attacker": 1,
+            "hp_before": 23602,
+            "hp_after": 23602,
+            "is_miss": true,
+            "attack_time": 54000
+        },
+        {
+            "attacker_type": 1,
+            "hp_before": 7346,
+            "hp_after": 4070,
+            "dmg": 3276,
+            "attack_time": 54000
+        },
+        {
+            "be_attacker": 1,
+            "hp_before": 23602,
+            "hp_after": 21721,
+            "dmg": 1881,
+            "attack_time": 60000
+        },
+        {
+            "attacker_type": 1,
+            "hp_before": 4070,
+            "hp_after": 664,
+            "dmg": 3406,
+            "attack_time": 63000
+        },
+        {
+            "be_attacker": 1,
+            "hp_before": 21721,
+            "hp_after": 21721,
+            "is_miss": true,
+            "attack_time": 66000
+        },
+        {
+            "be_attacker": 1,
+            "hp_before": 21721,
+            "hp_after": 20114,
+            "dmg": 1607,
+            "attack_time": 72000
+        },
+        {
+            "attacker_type": 1,
+            "hp_before": 664,
+            "hp_after": 664,
+            "is_miss": true,
+            "attack_time": 72000
+        },
+        {
+            "be_attacker": 1,
+            "hp_before": 20114,
+            "hp_after": 18473,
+            "dmg": 1641,
+            "attack_time": 78000
+        },
+        {
+            "attacker_type": 1,
+            "hp_before": 664,
+            "hp_after": 664,
+            "is_miss": true,
+            "attack_time": 81000
+        },
+        {
+            "be_attacker": 1,
+            "hp_before": 18473,
+            "hp_after": 16883,
+            "dmg": 1590,
+            "attack_time": 84000
+        },
+        {
+            "be_attacker": 1,
+            "hp_before": 16883,
+            "hp_after": 15242,
+            "dmg": 1641,
+            "attack_time": 90000
+        },
+        {
+            "attacker_type": 1,
+            "hp_before": 664,
+            "dmg": 664,
+            "attack_time": 90000
+        }
+    ],
+    "dmg": 17198,
+    "dmg_rate": 5301,
+    "boss_hp": 32440,
+    "player_hp": 17530,
+    "buff_cards": [
+        {
+            "buff_card_id": 701,
+            "left_round": 2
+        }
+    ]
+}

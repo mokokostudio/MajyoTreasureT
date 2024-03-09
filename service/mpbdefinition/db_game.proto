@@ -1,0 +1,73 @@
+syntax = "proto3";
+
+package mpb;
+
+option go_package = "./mpb";
+
+message DBEnergy {
+    uint32 energy = 1;
+    int64 recover_at = 2;
+}
+
+message DBFightHistory {
+    map<uint32, uint32> win_times = 1;
+}
+
+message DBHiddenBossFindHistory {
+    map<uint64, int64> boss_expire_at = 1;
+}
+
+message DBHiddenBoss {
+    uint64 boss_uuid = 1;
+    uint32 boss_id = 2;
+    uint64 finder = 3;
+    uint64 hp = 4;
+    int64 expired_at = 5;
+    map<uint64,int64> last_fight_time = 6;
+    map<uint64, uint64> dmgs = 7; // recode dmg, only dmg >1% hp will be recoded
+    uint64 killer = 8;
+    repeated DBHiddenBossFightHistory fight_histories = 9; // record the last 3 histories
+    map<uint64, uint64> award_add_rates = 10;
+}
+
+message DBHiddenBossFightHistory {
+    string nickname = 1;
+    uint64 dmg_rate = 2;
+}
+
+message DBBossDefeatHistoryNode {
+    uint32 boss_id = 1;
+    uint32 level = 2;
+}
+
+message DBBossDefeatHistory {
+    map<uint32, DBBossDefeatHistoryNode> boss_defeat_history = 1;
+}
+
+message DBUserPVPDailyRewardsNode {
+    uint32 rank = 1;
+    uint32 status = 2;
+}
+
+message DBUserPVPInfo {
+    uint32 challenge_cnt = 1;
+    int64 update_at = 2;
+    map<string, DBUserPVPDailyRewardsNode> rank_rewards = 3;
+}
+
+message DBPVPHistory {
+    map<uint32, uint64> history = 1;
+}
+
+message DBBuffCardOptions {
+    uint32 boss_id = 1;
+    repeated uint32 buff_cards = 2;
+}
+
+message DBBuffCardsValid {
+    message Node {
+        uint32 buff_card_id = 1;
+        uint32 left_round = 2;
+    }
+    repeated Node buff_cards = 1;
+}

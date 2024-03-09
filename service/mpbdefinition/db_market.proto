@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package mpb;
+
+option go_package = "./mpb";
+
+message DBGoodsOrder {
+    uint64 order_uuid = 1;
+    uint32 goods_id = 2;
+    uint64 goods_num = 3;
+    uint64 price = 4;
+    uint64 gas = 5;
+    int64 publish_at = 6;
+    int64 open_at = 7;
+    int64 sold_at = 8;
+    uint32 status = 9;
+    uint64 seller = 10;
+    uint64 buyer = 11;
+}

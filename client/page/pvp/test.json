@@ -1,0 +1,14 @@
+{
+    "rank": 136,
+    "challenger_cnt": 5,
+    "challenger_cnt_update_at": 1707036574,
+    "pvp_settle_rewards": [
+        {
+            "season_id": 1,
+            "rank": 135,
+            "rewards": {}
+        }
+    ],
+    "pvp_season_date": 20240204,
+    "pvp_mana_awards_pool": 1000
+}

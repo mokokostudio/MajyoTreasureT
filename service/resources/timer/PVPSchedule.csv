@@ -1,0 +1,4 @@
+PVPSeasonId,StartTime,EndTime,SettleStartAt,SettleEndAt
+int,string,string,string,string
+赛季id,开始时间,结束时间,PVP结算开始时间（时:分:秒）,PVP结算结束时间（时:分:秒）
+1,2024-01-01 00:00:00,2050-12-31 23:59:59,13:00:00,13:25:59

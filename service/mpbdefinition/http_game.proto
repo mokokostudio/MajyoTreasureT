@@ -1,0 +1,114 @@
+syntax = "proto3";
+
+package mpb;
+
+option go_package = "./mpb";
+
+import "common.proto";
+
+// game
+message CReqFight {
+    uint32 boss_id = 1;
+    uint64 boss_uuid = 2;
+}
+
+message CResFight {
+    bool win = 1;
+    bool boss_die = 2;
+    repeated FightDetail details = 3;
+    CAwards awards = 4;
+    uint32 energy_cost = 5;
+    uint32 energy = 6;
+    int64 energy_recover_at = 7;
+    uint64 dmg = 8;
+    uint64 dmg_rate = 9;
+    HiddenBoss hidden_boss = 10;
+    uint64 boss_hp = 11;
+    uint64 player_hp = 12;
+    repeated BuffCard buff_cards = 13;
+    EGame.BuffCardStatus buff_card_status = 14;
+}
+
+message CResGetEnergy {
+    uint32 energy = 1;
+    int64 update_at = 2;
+}
+
+message CReqGetHiddenBoss {
+    uint64 boss_uuid = 1;
+}
+
+message CResGetHiddenBoss {
+    HiddenBoss hidden_boss = 1;
+    bool fought = 2;
+    int64 fight_cd = 3;
+}
+
+message CReqNewHiddenBoss {
+    uint64 tguser = 1;
+    uint32 boss_id = 2;
+}
+
+message CResNewHiddenBoss {
+    HiddenBoss hidden_boss = 1;
+}
+
+message CReqFightPVP {
+    uint64 target_id = 1;
+    uint32 target_rank = 2;
+}
+
+message CResFightPVP {
+    bool win = 1;
+    uint32 old_rank = 2;
+    uint32 new_rank = 3;
+    uint64 challenger_hp = 4;
+    uint64 defender_hp = 5;
+    repeated FightDetail details = 6;
+    uint32 pvp_challenge_cnt = 7;
+    int64 pvp_challenge_cnt_update_at = 8;
+    uint64 mana = 9;
+}
+
+message CResGetPVPInfo {
+    uint32 rank = 1;
+    uint32 challenger_cnt = 2;
+    int64 challenger_cnt_update_at = 3;
+    repeated PVPSettleRewards pvp_settle_rewards = 4;
+    uint32 pvp_season_date = 5; // 20240101
+    uint64 pvp_mana_awards_pool = 6;
+}
+
+message CReqGetPVPRanks {
+    uint32 page_num = 1;
+}
+
+message CResGetPVPRanks {
+    uint32 page_num = 1;
+    repeated PVPRankNode rank_list = 2;
+}
+
+message CResGetPVPChallengeTargets {
+    repeated PVPRankNode target_list = 1;
+}
+
+message CResGetPVPHistory {
+    repeated PVPHistory list = 1;
+}
+
+message CReqRandomBuffCards {
+    uint32 boss_id = 1;
+}
+
+message CResRandomBuffCards {
+    uint32 boss_id = 1;
+    repeated uint32 buff_cards = 2;
+}
+
+message CReqChoseBuffCard {
+    uint32 buff_card = 1;
+}
+
+message CResChoseBuffCard {
+    repeated uint32 buff_cards = 1;
+}

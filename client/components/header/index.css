@@ -1,0 +1,176 @@
+/* header  */
+.headbox {
+    height: 80px;
+    width: 100%;
+    font-family: myFirstFont;
+
+    .tips-div{
+      z-index: 9999;
+      position: absolute;
+      top: 0;
+      left:0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: inherit;
+    }
+
+    .text-stroke{
+      -webkit-text-stroke:4px transparent;
+      background:#5C2102;
+      padding: 0 1px;
+      -moz-background-clip: text;
+      -webkit-background-clip: text;
+      -o-background-clip: text;
+      background-clip: text;
+    }
+
+    .user {
+        width: 95%;
+        margin: 0 auto;
+        display: flex;
+        padding: 15px 0;
+        padding-left: 80px;
+        color: #FFD346;
+
+        .userinfo{
+          width: 600px;
+
+          .pic {
+              width: 70px;
+              height: 70px;
+              overflow: hidden;
+              margin-right: 10px;
+              float:left;
+
+              img {
+                  width: 100%;
+                  height: 100%;
+              }
+          }
+
+          .text {
+              float:left;
+              /* -webkit-text-stroke: 0.5px #5C2102;  */
+              /* rgb(255, 243, 208)  color:#46f8ff;*/
+              .name {
+                  width: 100%;
+                  height: 36px;
+                  font-size: 30px;
+                  font-weight: 900;
+                  color: #fff4d0;
+                  span{
+                    display: block;
+                  }
+              }
+
+              .accountInfo {
+                  display: flex;
+              }
+
+              .ether {
+                  font-size: 26px;
+                  margin-top: 10px;
+                  color: #FFD346;
+                  padding-left: 28px;
+                  background: url(../../assets/ETHERicon.png) no-repeat left center;
+                  background-size: 24px;
+              }
+
+              .des {
+                  margin-left: 30px;
+                  font-size: 26px;
+                  margin-top: 10px;
+                  color: #46f8ff;
+                  padding-left: 28px;
+                  background: url(../../assets/TONicon.png) no-repeat left center;
+                  background-size: 24px;
+              }
+
+              .energy {
+                  margin-left: 30px;
+                  font-size: 26px;
+                  margin-top: 10px;
+                  color: #5aec52;
+                  padding-left: 28px;
+                  background: url(../../assets/ENERGYicon.png) no-repeat left center;
+                  background-size: 24px;
+                  span{
+                    float: left;
+                  }
+              }
+          }
+
+        }
+
+        .head-bag{
+          margin-top: 25px;
+          img{
+            width: 56px;
+            height: 50px;
+          }
+        }
+    }
+    .energyTip{
+      position: absolute;
+      top: 105px;
+      z-index: 12;
+      .energyTipContent{
+        margin-left: 60px;
+        background: url(../../assets/tipinfo.png) no-repeat left center;
+        background-size: 100% 100%;
+        color: aliceblue;
+        font-size: 28px;
+        padding: 12px 15px;
+      }
+    }
+
+    .bagbox{
+      position: absolute;
+      margin-left: 474px;
+      z-index: 11;
+      top:100px;
+
+      .bagcontent{
+        width:280px;
+        background: url(../../assets/bag/bagbg.png) no-repeat left center;
+        background-size: 100% 100%;
+        padding: 20px 20px;
+        max-height: 320px;
+        transform-origin: 50% 0;
+        animation: bagopen .1s ease-out forwards;
+        -webkit-animation: bagopen .1s ease-out forwards;
+
+        .bagitem{
+          width: 240px;
+          height: 40px;
+          margin-bottom: 8px;
+
+          img{
+            width: 40px;
+            height: 40px;
+            float: left;
+            margin-right: 10px; ;
+          }
+
+          span{
+            float: left;
+            line-height: 41px;
+            color: #FFD346;
+            font-size: 25px;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+
+}
+
+@keyframes bagopen {
+    0%{transform:scale(1,0);}
+    100%{transform:scale(1,1);}
+}
+@-webkit-keyframes bagopen{
+  0%{-webkit-transform:scale(1,0);}
+  100%{-webkit-transform:scale(1,1);}
+}

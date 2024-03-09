@@ -1,0 +1,527 @@
+@font-face{
+  font-family: myFirstFont;
+  src: url(../../assets/ShanghaiFace-SenGBT-Flash.ttf)
+}
+
+body{
+  background:#47326b;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@keyframes upsuccess {
+  100% {background-image: url(../../assets/frameimg/upsuccess.gif);}
+}
+@-webkit-keyframes upsuccess {
+  100% {background-image: url(../../assets/frameimg/upsuccess.gif);}
+}
+@-moz-keyframes upsuccess{
+  100% { background-image: url(../../assets/frameimg/upsuccess.gif); } /* 第一帧图片路径 */
+}
+@-o-keyframes upsuccess{
+  100% { background-image: url(../../assets/frameimg/upsuccess.gif); } /* 第一帧图片路径 */
+}
+
+@keyframes slidein-next{
+  from { opacity: 0; transform: translateX(+200px); }
+  to { opacity: 1; transform: translateX(0px); }
+}
+@keyframes slideout-next{
+  from { opacity: 1; transform: translateX(0px); }
+  to { opacity: 0; transform: translateX(-140px); }
+}
+@keyframes slidein-prev{
+  from { opacity: 0; transform: translateX(-200px); }
+  to { opacity: 1; transform: translateX(0px); }
+}
+@keyframes slideout-prev{
+  from { opacity: 1; transform: translateX(0px); }
+  to { opacity: 0; transform: translateX(+140px); }
+}
+
+@-webkit-keyframes slidein-next{
+  from { opacity: 0; transform: translateX(+200px); }
+  to { opacity: 1; transform: translateX(0px); }
+}
+@-webkit-keyframes slideout-next{
+  from { opacity: 1; transform: translateX(0px); }
+  to { opacity: 0; transform: translateX(-140px); }
+}
+@-webkit-keyframes slidein-prev{
+  from { opacity: 0; transform: translateX(-200px); }
+  to { opacity: 1; transform: translateX(0px); }
+}
+@-webkit-keyframes slideout-prev{
+  from { opacity: 1; transform: translateX(0px); }
+  to { opacity: 0; transform: translateX(+140px); }
+}
+
+@-moz-keyframes slidein-next{
+  from { opacity: 0; transform: translateX(+200px); }
+  to { opacity: 1; transform: translateX(0px); }
+}
+@-moz-keyframes slideout-next{
+  from { opacity: 1; transform: translateX(0px); }
+  to { opacity: 0; transform: translateX(-140px); }
+}
+@-moz-keyframes slidein-prev{
+  from { opacity: 0; transform: translateX(-200px); }
+  to { opacity: 1; transform: translateX(0px); }
+}
+@-moz-keyframes slideout-prev{
+  from { opacity: 1; transform: translateX(0px); }
+  to { opacity: 0; transform: translateX(+140px); }
+}
+
+@-o-keyframes slidein-next{
+  from { opacity: 0; transform: translateX(+200px); }
+  to { opacity: 1; transform: translateX(0px); }
+}
+@-o-keyframes slideout-next{
+  from { opacity: 1; transform: translateX(0px); }
+  to { opacity: 0; transform: translateX(-140px); }
+}
+@-o-keyframes slidein-prev{
+  from { opacity: 0; transform: translateX(-200px); }
+  to { opacity: 1; transform: translateX(0px); }
+}
+@-o-keyframes slideout-prev{
+  from { opacity: 1; transform: translateX(0px); }
+  to { opacity: 0; transform: translateX(+140px); }
+}
+
+@keyframes heart{
+  from{transform:translate(0,0)}
+  to{transform:translate(0,10px)}
+}
+@keyframes zoom{
+  0%{transform: scale(1);}
+  50%{transform: scale(1.01);}
+  100%{transform: scale(1);}
+}
+@keyframes uptxt{
+  0%{transform: scale(1);}
+  50%{transform: scale(1.3);}
+  100%{transform: scale(1);}
+}
+@keyframes expand {
+    0% { transform: scale(0); }
+    100% { transform: scale(1); }
+}
+/* 定义弹窗退出动画 */
+@keyframes popupLeaveAnimation {
+    0% { opacity: 1; scaleY: 1; }
+    100% { opacity: 0; scaleY: 0; }
+}
+
+@-webkit-keyframes heart{
+  from{transform:translate(0,0)}
+  to{transform:translate(0,10px)}
+}
+@-webkit-keyframes zoom{
+  0%{transform: scale(1);}
+  50%{transform: scale(1.01);}
+  100%{transform: scale(1);}
+}
+@-webkit-keyframes uptxt{
+  0%{transform: scale(1);}
+  50%{transform: scale(1.3);}
+  100%{transform: scale(1);}
+}
+@-webkit-keyframes expand {
+    0% { transform: scale(0); }
+    100% { transform: scale(1); }
+}
+/* 定义弹窗退出动画 */
+@-webkit-keyframes popupLeaveAnimation {
+    0% { opacity: 1; scaleY: 1; }
+    100% { opacity: 0; scaleY: 0; }
+}
+
+@-moz-keyframes heart{
+  from{transform:translate(0,0)}
+  to{transform:translate(0,10px)}
+}
+@-moz-keyframes zoom{
+  0%{transform: scale(1);}
+  50%{transform: scale(1.01);}
+  100%{transform: scale(1);}
+}
+@-moz-keyframes uptxt{
+  0%{transform: scale(1);}
+  50%{transform: scale(1.3);}
+  100%{transform: scale(1);}
+}
+@-moz-keyframes expand {
+    0% { transform: scale(0); }
+    100% { transform: scale(1); }
+}
+/* 定义弹窗退出动画 */
+@-moz-keyframes popupLeaveAnimation {
+    0% { opacity: 1; scaleY: 1; }
+    100% { opacity: 0; scaleY: 0; }
+}
+
+@-o-keyframes heart{
+  from{transform:translate(0,0)}
+  to{transform:translate(0,10px)}
+}
+@-o-keyframes zoom{
+  0%{transform: scale(1);}
+  50%{transform: scale(1.01);}
+  100%{transform: scale(1);}
+}
+@-o-keyframes uptxt{
+  0%{transform: scale(1);}
+  50%{transform: scale(1.3);}
+  100%{transform: scale(1);}
+}
+@-o-keyframes expand {
+    0% { transform: scale(0); }
+    100% { transform: scale(1); }
+}
+/* 定义弹窗退出动画 */
+@-o-keyframes popupLeaveAnimation {
+    0% { opacity: 1; scaleY: 1; }
+    100% { opacity: 0; scaleY: 0; }
+}
+
+.mint-view{
+  background:#47326b url(../../assets/bg.png) no-repeat center top;
+  background-size: 100%;
+  width:750px;
+  height: 1450px;
+  margin:0 auto 0;
+}
+
+.text-stroke{
+  -webkit-text-stroke:4px transparent;
+  background:#5C2102;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  -o-background-clip: text;
+  background-clip: text;
+  padding: 0 1px;
+}
+
+
+/* list */
+.weaponlist{
+  overflow: hidden;
+  .wbox-bg{
+    position: relative;
+    padding:30px 0px 20px 34px;
+    left: -30px;
+    top: 20px;
+    height: 756px;
+    width: 120%;
+    background: url(../../assets/tipinfo.png) no-repeat left center;
+    background-size: 120% 756px;
+  }
+  .wbox{
+    width: 100%;
+    height:756px;
+    overflow-y: scroll;
+
+    .item{
+      float: left;
+      margin:20px 0 0 20px;
+      width:340px;
+      height:134px;
+      background: url(../../assets/box-b.png) no-repeat left center;
+      background-size: 100%;
+      display: flex;
+      position: relative;
+      .user{
+        margin:16px 0 0 10px;
+        .pic{
+          width: 80px;
+          height: 80px;
+          background: url(../../assets/item-bg.png) no-repeat left center;
+          background-size: 100%;
+          img{
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .name{
+          color: rgb(255, 242, 207);
+          font-size: 18px;
+          transform: scale(0.9);
+          width:30px;
+          text-align: center;
+        }
+      }
+      .text{
+        color:#FFD346;
+        margin: 16px 0 0 10px;
+        font-weight: 700;
+        font-family: myFirstFont;
+        .tls{
+          font-size: 28px;
+        }
+        .atr{
+          margin-top: 6px;
+          div{
+            width: 260px;
+          }
+          span{
+            float:left;
+            margin-top: 10px;
+            font-size:22px;
+            width:48%;
+            display: block;
+          }
+        }
+      }
+      .ingame,.collaction{
+        color: rgb(255, 242, 207);
+        font-size: 28px;
+        position: absolute;
+        right:0;
+        top:-12px;
+        font-weight: 700;
+      }
+      .ingame{color:#ff7b46;}
+
+
+    }
+  }
+  .wbox::-webkit-scrollbar{
+    width: 0;
+    height: 10px;
+    background-color: #999999;
+  }
+  .wbox::-webkit-scrollbar-thumb{
+    background-color: #000;
+  }
+}
+
+
+.foot{
+  padding-top:40px;
+  margin-bottom: 90px;
+  font-family: myFirstFont;
+  text-align: center;
+
+  /* -webkit-text-stroke: 0.5px #5C2102; */
+  .bxicon{
+    width:250px;
+    margin: 0 auto;
+    img{
+      width: 60%;
+      height: 60%;
+    }
+  }
+  .text{
+    font-size: 48px;
+    padding:2px 0 16px 0;
+    color:#FFD346;
+  }
+  .des{color: rgb(255, 242, 207); font-size: 26px;}
+
+}
+
+.tips-div{
+  z-index: 9999;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: inherit;
+}
+
+
+.btn{
+  width:216px;
+  height:80px;
+  margin:32px auto 0;
+  line-height: 80px;
+  background: url(../../assets/btn.png) no-repeat left center;
+  background-size: 100%;
+  font-size: 44px;
+  font-weight: 600;
+  animation: zoom .5s ease infinite;
+  -webkit-animation: zoom .5s ease infinite;
+  -moz-animation: zoom .5s ease infinite;
+  -o-animation: zoom .5s ease infinite;
+
+  span{
+    text-align: center;
+    color:#FFD346;
+    display: block;
+  }
+}
+
+.mintbox{
+  .bgs{
+    width: 100%;
+    height:100%;
+    position: fixed;
+    left:0;
+    top:0;
+    background:url(../../assets/popbg.png);
+    z-index: 20;
+  }
+  .popbody{
+    width:600px;
+    position: fixed;
+    left:50%;
+    top:20%;
+    margin-left:-300px;
+    z-index: 30;
+    font-family: myFirstFont;
+    animation: expand 0.1s ease-out forwards;
+    -webkit-animation: expand 0.1s ease-out forwards;
+    -moz-animation: expand 0.1s ease-out forwards;
+    -o-animation: expand 0.1s ease-out forwards;
+
+    .head{
+      width:100%;
+      height:172px;
+      background:url(../../assets/pop1.png) no-repeat left top;
+      background-size: 100%;
+      font-size:44px;
+      color:#FFD346;
+      text-align: center;
+      line-height: 140px;
+      position: relative;
+      .icon{
+        width: 110px;
+        height: 60px;
+        position: absolute;
+        left:-16px;
+        top:28%;
+        background:url(../../assets/NFTtag.png) no-repeat left top;
+        background-size: 100%;
+      }
+      .tips{
+        font-size:24px;
+        text-align:center;
+        color:#ff7b46;
+        width:100%;
+        position:absolute;
+        left:0;
+        bottom:-20px;
+      }
+    }
+    .middle{
+      width:100%;
+      background:url(../../assets/pop2.png) repeat-y left top;
+      background-size: 100%;
+      .type{
+        font-size: 28px;
+        overflow: hidden;
+        .listpic{
+          margin-bottom:36px;
+          overflow:hidden;
+          .pic{
+            margin-left:24px;
+            width: 90px;
+            height:90px;
+            float:left;
+          }
+        }
+        .tips{
+          font-size:24px;
+          text-align:center;
+          color:#ff7b46;
+          width:100%;
+          margin-bottom:10px;
+        }
+        .blockhe{
+          width:480px;
+          overflow:hidden;
+          border:2px solid rgb(47,28,15);
+          background:rgba(24,18,8,0.6);
+          margin:30px auto 0;
+          border-radius:14px;
+          padding:12px 0 30px 0;
+          .atr{span{font-size:24px;}}
+        }
+        .btxt{
+          font-size:24px;
+          color: rgb(255, 242, 207);
+          text-align:center;
+          padding-top:20px;
+          p{margin-top:10px;}
+          span{
+            color:#FFD346;
+            padding-left:28px;
+            background: url(../../assets/TONicon.png) no-repeat left center;
+            background-size: 24px;
+          }
+        }
+        .pic{
+            width: 120px;
+            height:120px;
+            background: url(../../assets/item-bg.png) no-repeat left center;
+            background-size: 100%;
+            img{width: 100%; height: 100%;}
+            margin: 0 auto;
+          }
+          .name{
+            color: rgb(255, 242, 207);
+            width:100%;
+            text-align: center;
+            margin-top: 16px;
+
+          }
+          .ingame,.collaction{
+            margin-top: 12px;
+            color: rgb(255, 242, 207);
+
+            font-weight: 700;
+            width:100%;
+            text-align: center;
+        }
+        .ingame{color:#ff7b46;}
+        .atr{
+            margin: 8px auto 0;
+            color:#FFD346;
+            width: 360px;
+
+            span{
+              float:left;
+              font-size:30px;
+              width:50%;
+              display: block;
+              margin-top: 10px;
+              text-indent: 20px;
+            }
+          }
+      }
+    }
+    .foots{
+      width:100%;
+      background:url(../../assets/pop3.png) no-repeat left top;
+      background-size: 100%;
+      height:200px;
+      overflow: hidden;
+      .btn{margin: 72px auto 0;}
+      .f30{ font-size:30px;}
+    }
+    .close-btn{
+      width: 100%;
+      height:60px;
+      background:url(../../assets/close-btn.png) no-repeat center center;
+      background-size:10%;
+      margin-top:60px;
+      transform: scale(1);
+
+    }
+    .close-btn:active{
+      transform: scale(1.1);
+      animation: popupLeaveAnimation 0.4s ease forwards;
+      -webkit-animation: popupLeaveAnimation 0.4s ease forwards;
+      -moz-animation: popupLeaveAnimation 0.4s ease forwards;
+      -o-animation: popupLeaveAnimation 0.4s ease forwards;
+    }
+  }
+}
+

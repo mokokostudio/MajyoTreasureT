@@ -1,0 +1,14 @@
+Cmd,Type,SubType,Method,Text,Photo,GameShortName,Url
+string,string,string,string,string,string,string,string
+命令,回复类型,回复sub类型回复方式,内容,图片(网络地址或者file_id),Photo,游戏名,Url
+/echo,ok,,sendMessage,,,,
+/menu,ok,,sendPhoto,,https://lmg.jj20.com/up/allimg/4k/s/01/21092413511922Q-0-lp.jpg,,
+/game,ok,,sendGame,,,majyotreasurev2,
+/cbqsendgame,ok,answer,answerCallbackQuery,,,,
+/cbqsendgame,ok,,sendGame,,,majyotreasurev2,
+/cbqlaunchgame,ok,answer,answerCallbackQuery,,,,https://mirror-realms.io:8091/boss
+/hiddenboss,ok,,sendPhoto,,,,
+/hiddenboss,err,notfound,sendMessage,Hidden boss expired,,,
+/cbqfighthboss,ok,answer,answerCallbackQuery,,,,
+/cbqsendsetting,ok,answer,answerCallbackQuery,,,,
+/cbqsetlan,ok,answer,answerCallbackQuery,,,,
